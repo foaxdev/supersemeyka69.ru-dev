@@ -1,0 +1,17 @@
+.introduction__video {
+    display: block;
+    width: 100%;
+    margin: 100px 0 0 0;
+}
+
+@media (min-width: $tablet-width) {
+    .introduction__video {
+        margin-top: 110px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .introduction__video {
+        margin-top: 206px;
+    }
+}
