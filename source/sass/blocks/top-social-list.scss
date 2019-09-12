@@ -1,0 +1,40 @@
+.top-social-list {
+  @include list-reset();
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.top-social-list__link {
+  @include hide-text();
+  display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.top-social-list__item:not(:last-child) .top-social-list__link {
+  margin-right: 20px;
+}
+
+.top-social-list__svg {
+  fill: $white;
+}
+
+@media (min-width: $desktop-width) {
+  .top-social-list {
+    position: absolute;
+    top: -195px;
+    right: 310px;
+  }
+
+  .top-social-list__svg {
+    fill: $violet;
+  }
+}

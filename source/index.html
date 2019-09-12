@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Суперсемейка</title>
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
+
+    <script src="js/picturefill.min.js" async></script>
+</head>
+<body>
+    <div class="svg-template">
+        <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="header">
+        <div class="header__top-wrap">
+            <a href="/">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/logos/logo-tablet.png">
+                    <img class="header__logo" src="img/logos/logo-mobile.png" width="60" height="60" alt="Логотип развивающего центра Суперсемейка">
+                </picture>
+            </a>
+            <b class="header__tagline">Развивающий центр</b>
+            <button class="header__button-toggle" type="button">Открыть/закрыть меню</button>
+        </div>
+        <div class="header__wrap">
+            <div class="header__menu-wrap">
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Расписание</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">Направления</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">О нас</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contacts-social-wrap">
+                    <ul class="top-social-list">
+                        <li class="top-social-list__item">
+                            <a class="top-social-list__link" href="https://www.instagram.com/supersemeyka_69">
+                                Инстаграм
+                                <svg class="top-social-list__svg" width="35" height="35"><use xlink:href="#icon-instagram"></use></svg>
+                            </a>
+                        </li>
+                        <li class="top-social-list__item">
+                            <a class="top-social-list__link" href="https://vk.com/supersemeyka69">
+                                ВКонтакте
+                                <svg class="top-social-list__svg" width="35" height="35"><use xlink:href="#icon-vk"></use></svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="top-contacts-list">
+                        <li class="top-contacts-list__item">
+                            <a class="top-contacts-list__link" href="tel:+79206940404">8 920 694-04-04</a>
+                        </li>
+                        <li class="top-contacts-list__item">
+                            <p class="top-contacts-list__address">г.Тверь ул. Псковская д.4</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <div class="copyright">
+            <div class="copyright__text">Иконка VK сделана <a class="copyright__link" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> с сайта <a class="copyright__link"> href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div class="copyright__text">Иконка телефона сделана <a class="copyright__link" href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> с сайта <a class="copyright__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div class="copyright__text">Иконка меню сделана <a class="copyright__link" href="https://www.flaticon.com/authors/google" title="Google">Google</a> с сайта <a class="copyright__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div class="copyright__text">Иконка закрытия меню сделана <a class="copyright__link" href="https://www.flaticon.com/authors/twitter" title="Twitter">Twitter</a> с сайта <a class="copyright__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div class="copyright__text">Иконка Instagram сделана <a class="copyright__link" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a class="copyright__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
+    </footer>
+    <script src="js/script.min.js" defer></script>
+</body>
+</html>
