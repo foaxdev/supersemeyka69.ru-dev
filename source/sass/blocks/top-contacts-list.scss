@@ -37,12 +37,18 @@
     text-transform: initial;
 }
 
+@media (min-width: $tablet-width) {
+    .top-contacts-list {
+        align-items: flex-start;
+    }
+}
+
 @media (min-width: $desktop-width) {
     .top-contacts-list {
         position: absolute;
-        right: 50px;
+        right: 60px;
         top: -190px;
-        
+
         align-items: flex-end;
     }
 

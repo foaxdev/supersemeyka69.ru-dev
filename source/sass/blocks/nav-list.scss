@@ -29,10 +29,11 @@
     }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
     .nav-list {
         flex-direction: row;
         justify-content: flex-start;
+        flex-wrap: wrap;
         margin-top: 20px;
     }
 

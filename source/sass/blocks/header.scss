@@ -22,14 +22,13 @@
 
     display: flex;
     flex-direction: column;
-    width:280px;
     margin: 0 auto;
 }
 
 .header__top-wrap {
     position: relative;
 
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -53,7 +52,7 @@
     flex-direction: column;
     padding: 10px 20px 25px 20px;
     margin: 0 auto;
-    width: 320px;
+    width: 280px;
 
     &--hidden {
         display: none;
@@ -79,7 +78,7 @@
     @include hide-text();
     position: absolute;
     top: 35px;
-    right: 35px;
+    right: 20px;
 
     display: none;
     width: 30px;
@@ -119,19 +118,15 @@
     }
 
     .header__contacts-social-wrap {
-        width: 708px;
+        width: 100%;
     }
 
     .header__wrap {
         padding: 0;
     }
 
-    .header__top-wrap {
-        width: 768px;
-    }
-
     .header__menu-wrap {
-        width: 768px;
+        width: 100%;
         padding: 0 30px 20px 30px;
     }
 
@@ -160,7 +155,7 @@
     }
 
     .header__contacts-social-wrap {
-        width: 1100px;
+        width: 1200px;
     }
 
     .header__button-toggle,

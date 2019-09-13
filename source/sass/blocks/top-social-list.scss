@@ -27,6 +27,12 @@
     fill: $white;
 }
 
+@media (min-width: $tablet-width) {
+    .top-social-list {
+        justify-content: flex-start;
+    }
+}
+
 @media (min-width: $desktop-width) {
     .top-social-list {
         position: absolute;
