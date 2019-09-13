@@ -1,0 +1,64 @@
+.sponsores {
+    background-color: $shadow-green;
+}
+
+.sponsores-list {
+    @include list-reset();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.sponsores-list__link {
+    &:hover,
+    &:focus {
+        opacity: 0.6;
+        outline: none;
+    }
+
+    &:active {
+        opacity: 0.3;
+        outline: none;
+    }
+}
+
+.sponsores-list__item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+    .sponsores-list {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 50px 30px;
+    }
+
+    .sponsores-list__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .sponsores-list__image {
+        height: 100px;
+
+        &--tver-land {
+            width: 186px;
+        }
+
+        &--rumos-kia {
+            width: 185px;
+        }
+
+        &--your-celebration {
+            width: 339px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .sponsores-list {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 60px 50px;
+    }
+}

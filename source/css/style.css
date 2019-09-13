@@ -916,3 +916,59 @@ input[type="file"].visually-hidden {
   opacity: 0.7; }
   .overlay-schedule--show {
     display: block; }
+
+.sponsores {
+  background-color: #17aa00; }
+
+.sponsores-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 20px; }
+
+.sponsores-list__link:hover, .sponsores-list__link:focus {
+  opacity: 0.6;
+  outline: none; }
+
+.sponsores-list__link:active {
+  opacity: 0.3;
+  outline: none; }
+
+.sponsores-list__item:not(:last-child) {
+  margin-bottom: 40px; }
+
+@media (min-width: 768px) {
+  .sponsores-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 50px 30px; }
+  .sponsores-list__item:not(:last-child) {
+    margin-bottom: 0; }
+  .sponsores-list__image {
+    height: 100px; }
+    .sponsores-list__image--tver-land {
+      width: 186px; }
+    .sponsores-list__image--rumos-kia {
+      width: 185px; }
+    .sponsores-list__image--your-celebration {
+      width: 339px; } }
+
+@media (min-width: 1200px) {
+  .sponsores-list {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 60px 50px; } }
