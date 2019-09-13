@@ -3,9 +3,14 @@
 @import "mixins";
 @import "fonts";
 @import "global";
+@import "animation";
 @import "blocks/header";
 @import "blocks/nav-list";
 @import "blocks/top-social-list";
 @import "blocks/top-contacts-list";
 @import "blocks/main-nav";
 @import "blocks/introduction";
+@import "blocks/modal";
+@import "blocks/schedule-list";
+@import "blocks/schedule";
+@import "blocks/overlay-schedule";

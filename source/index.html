@@ -30,7 +30,7 @@
             <div class="header__menu-wrap">
                 <nav class="main-nav">
                     <ul class="nav-list">
-                        <li class="nav-list__item"><a class="nav-list__link" href="#">Расписание</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#schedule">Расписание</a></li>
                         <li class="nav-list__item"><a class="nav-list__link" href="#">Направления</a></li>
                         <li class="nav-list__item"><a class="nav-list__link" href="#">О нас</a></li>
                     </ul>
@@ -65,8 +65,124 @@
 
     <main>
         <h1 class="visually-hidden">Развивающий центр Суперсемейка</h1>
+
         <section class="introduction">
             <video class="introduction__video" src="video/intro.mp4" autoplay="" loop="" muted="muted" controlslist="nodownload" poster="img/poster.jpg"></video>
+        </section>
+
+        <section class="schedule" id="schedule">
+            <h2 class="schedule__header">Расписание</h2>
+            <ul class="schedule-list">
+                <li class="schedule-list__item">
+                    <button class="schedule-list__weekday-button" type="button">Понедельник</button>
+                    <a href="img/schedule/monday.png">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/schedule/monday-desktop.png">
+                            <source media="(min-width: 768px)" srcset="img/schedule/monday-tablet.png">
+                            <img class="schedule-list__image" src="img/schedule/monday-mobile.png" alt="Расписание на понедельник">
+                        </picture>
+                    </a>
+                    <div class="modal modal-schedule">
+                        <button class="modal__close-button" type="button">Закрыть</button>
+                        <a href="img/schedule/monday.png">
+                            <picture>
+                                <img class="modal-schedule__original-image" src="img/schedule/monday-mobile.png" alt="Расписание на понедельник">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+                <li class="schedule-list__item">
+                    <button class="schedule-list__weekday-button" type="button">Вторник</button>
+                    <a href="img/schedule/tuesday.png">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/schedule/tuesday-desktop.png">
+                            <source media="(min-width: 768px)" srcset="img/schedule/tuesday-tablet.png">
+                            <img class="schedule-list__image" src="img/schedule/tuesday-mobile.png" alt="Расписание на вторник">
+                        </picture>
+                    </a>
+                    <div class="modal modal-schedule">
+                        <button class="modal__close-button" type="button">Закрыть</button>
+                        <a href="img/schedule/tuesday.png">
+                            <picture>
+                                <img class="modal-schedule__original-image" src="img/schedule/tuesday-mobile.png" alt="Расписание на вторник">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+                <li class="schedule-list__item">
+                    <button class="schedule-list__weekday-button" type="button">Среда</button>
+                    <a href="img/schedule/wednesday.png">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/schedule/wednesday-desktop.png">
+                            <source media="(min-width: 768px)" srcset="img/schedule/wednesday-tablet.png">
+                            <img class="schedule-list__image" src="img/schedule/wednesday-mobile.png" alt="Расписание на среду">
+                        </picture>
+                    </a>
+                    <div class="modal modal-schedule">
+                        <button class="modal__close-button" type="button">Закрыть</button>
+                        <a href="img/schedule/wednesday.png">
+                            <picture>
+                                <img class="modal-schedule__original-image" src="img/schedule/wednesday-mobile.png" alt="Расписание на среду">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+                <li class="schedule-list__item">
+                    <button class="schedule-list__weekday-button" type="button">Четверг</button>
+                    <a href="img/schedule/thursday.png">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/schedule/thursday-desktop.png">
+                            <source media="(min-width: 768px)" srcset="img/schedule/thursday-tablet.png">
+                            <img class="schedule-list__image" src="img/schedule/thursday-mobile.png" alt="Расписание на четверг">
+                        </picture>
+                    </a>
+                    <div class="modal modal-schedule">
+                        <button class="modal__close-button" type="button">Закрыть</button>
+                        <a href="img/schedule/thursday.png">
+                            <picture>
+                                <img class="modal-schedule__original-image" src="img/schedule/thursday-mobile.png" alt="Расписание на четверг">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+                <li class="schedule-list__item">
+                    <button class="schedule-list__weekday-button" type="button">Пятница</button>
+                    <a href="img/schedule/friday.png">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/schedule/friday-desktop.png">
+                            <source media="(min-width: 768px)" srcset="img/schedule/friday-tablet.png">
+                            <img class="schedule-list__image" src="img/schedule/friday-mobile.png" alt="Расписание на пятницу">
+                        </picture>
+                    </a>
+                    <div class="modal modal-schedule">
+                        <button class="modal__close-button" type="button">Закрыть</button>
+                        <a href="img/schedule/friday.png">
+                            <picture>
+                                <img class="modal-schedule__original-image" src="img/schedule/friday-mobile.png" alt="Расписание на пятницу">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+                <li class="schedule-list__item">
+                    <button class="schedule-list__weekday-button" type="button">Суббота</button>
+                    <a href="img/schedule/saturday.png">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/schedule/saturday-desktop.png">
+                            <source media="(min-width: 768px)" srcset="img/schedule/saturday-tablet.png">
+                            <img class="schedule-list__image" src="img/schedule/saturday-mobile.png" alt="Расписание на субботу">
+                        </picture>
+                    </a>
+                    <div class="modal modal-schedule">
+                        <button class="modal__close-button" type="button">Закрыть</button>
+                        <a href="img/schedule/saturday.png">
+                            <picture>
+                                <img class="modal-schedule__original-image" src="img/schedule/saturday-mobile.png" alt="Расписание на субботу">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="overlay-schedule"></div>
         </section>
     </main>
 

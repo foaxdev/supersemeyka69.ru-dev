@@ -410,6 +410,34 @@ input[type="file"].visually-hidden {
 .svg-template {
   display: none; }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px); }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px); }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px); }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
 .header {
   position: fixed;
   top: 0;
@@ -506,6 +534,8 @@ input[type="file"].visually-hidden {
     background-size: 30px; }
   .header__button-toggle--show {
     display: block; }
+  .header__button-toggle:hover, .header__button-toggle:focus, .header__button-toggle:active {
+    outline: none; }
 
 .header__button-toggle--opened::before {
   background-image: url("../img/menu-close.svg"); }
@@ -689,7 +719,7 @@ input[type="file"].visually-hidden {
 @media (min-width: 1200px) {
   .top-contacts-list {
     position: absolute;
-    right: 60px;
+    right: 70px;
     top: -190px;
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -721,3 +751,168 @@ input[type="file"].visually-hidden {
 @media (min-width: 1200px) {
   .introduction__video {
     margin-top: 206px; } }
+
+.modal {
+  position: fixed;
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  display: none;
+  width: 760px;
+  height: 759px;
+  margin-top: -379.5px;
+  margin-left: -355px; }
+  .modal--show {
+    display: block;
+    -webkit-animation: bounce 0.6s;
+            animation: bounce 0.6s; }
+
+.modal__close-button {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../img/menu-close.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none; }
+  .modal__close-button:hover, .modal__close-button:focus {
+    opacity: 0.6;
+    outline: none; }
+  .modal__close-button:active {
+    opacity: 0.3;
+    outline: none; }
+
+.schedule-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.schedule-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%; }
+
+.schedule-list__image {
+  height: auto; }
+  .schedule-list__image--hidden {
+    display: none; }
+
+.schedule-list__weekday-button {
+  padding: 15px 30px 10px 30px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #19d000;
+  border: none;
+  cursor: pointer; }
+  .schedule-list__weekday-button:hover, .schedule-list__weekday-button:focus {
+    background-color: #17aa00;
+    outline: none; }
+  .schedule-list__weekday-button:active {
+    opacity: 0.5; }
+
+@media (min-width: 768px) {
+  .schedule-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 30px; }
+  .schedule-list__item {
+    width: 45%;
+    margin-bottom: 20px; } }
+
+@media (min-width: 1200px) {
+  .schedule-list {
+    width: 1200px;
+    margin: 0 auto; }
+  .schedule-list__weekday-button {
+    display: none; }
+  .schedule-list__item {
+    width: auto;
+    margin-bottom: 30px;
+    border: 3px solid #6a296c;
+    border-radius: 6px;
+    cursor: pointer; }
+    .schedule-list__item:hover {
+      -webkit-box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.4);
+              box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.4); }
+  .schedule-list__image {
+    display: block;
+    width: 340px;
+    border-radius: 6px; }
+    .schedule-list__image--hidden {
+      display: block; } }
+
+.schedule {
+  margin-top: 50px; }
+
+.schedule__header {
+  margin: 0 0 30px 0;
+  font-size: 26px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #6a296c;
+  text-transform: uppercase;
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .schedule__header {
+    font-size: 32px; } }
+
+@media (min-width: 1200px) {
+  .schedule__header {
+    font-size: 38px; } }
+
+.overlay-schedule {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.7; }
+  .overlay-schedule--show {
+    display: block; }

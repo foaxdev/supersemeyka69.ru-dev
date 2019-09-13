@@ -104,6 +104,12 @@
     &--show {
         display: block;
     }
+
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none;
+    }
 }
 
 .header__button-toggle--opened::before {
