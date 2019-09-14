@@ -3,7 +3,8 @@
     flex-direction: column;
     margin-top: 100px;
 
-    &--english {
+    &--english,
+    &--pre-school {
         background-image: url("../img/bg/school.png");
     }
 }

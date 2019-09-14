@@ -11,12 +11,24 @@ function initializeMainMenu(elButtonToggle, elMenuWrap, elMainTagline) {
 
 function initializeScheduleLogic(elsButtonToggleSchedule) {
     for (let i = 0; i < elsButtonToggleSchedule.length; i++) {
-        let elSchedule = elsButtonToggleSchedule[i].nextElementSibling;
-        if (elSchedule)
-            elSchedule.classList.add("modal__image--hidden");
-        elsButtonToggleSchedule[i].addEventListener("click", function () {
-            elSchedule.classList.toggle("modal__image--hidden");
-        });
+        let elModalImage = elsButtonToggleSchedule[i].nextElementSibling;
+        if (elModalImage) {
+            if (elModalImage.classList.contains("modal")) {
+                elModalImage.classList.add("modal__image--hidden");
+                elsButtonToggleSchedule[i].addEventListener("click", function () {
+                    elModalImage.classList.toggle("modal__image--hidden");
+                });
+            }
+            else {
+                let elsModalImage = elsButtonToggleSchedule[i].nextElementSibling.querySelectorAll(".modal__image");
+                for (let j = 0; j < elsModalImage.length; j++) {
+                    elsModalImage[j].classList.add("modal__image--hidden");
+                    elsButtonToggleSchedule[i].addEventListener("click", function () {
+                        elsModalImage[j].classList.toggle("modal__image--hidden");
+                    });
+                }
+            }
+        }
     }
 }
 

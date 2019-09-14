@@ -34,6 +34,8 @@
 
     &:hover,
     &:focus {
+        color: $white;
+
         background-color: $violet;
     }
 }
@@ -49,6 +51,8 @@
 
         &:hover,
         &:focus {
+            color: $violet;
+
             background-color: $light-violet;
         }
     }
