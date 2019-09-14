@@ -743,8 +743,10 @@ input[type="file"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 100px; }
-  .introduction--english, .introduction--pre-school, .introduction--creative-studio {
+  .introduction--english, .introduction--pre-school, .introduction--creative-studio, .introduction--science {
     background-image: url("../img/bg/school.png"); }
+  .introduction--gymnastics {
+    background-image: url("../img/bg/sport.png"); }
 
 .introduction__image {
   height: auto;
@@ -1240,6 +1242,12 @@ input[type="file"].visually-hidden {
 .introduction-list--creative-studio li::before {
   background-image: url("../img/list-icons/palette.png"); }
 
+.introduction-list--science li::before {
+  background-image: url("../img/list-icons/microscope.png"); }
+
+.introduction-list--gymnastics li::before {
+  background-image: url("../img/list-icons/gymnastics.png"); }
+
 .introduction__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1524,3 +1532,39 @@ input[type="file"].visually-hidden {
 
 .footer {
   background-color: #6a296c; }
+
+.cloths__text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px 30px 20px; }
+
+.cloths__text {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #6a296c; }
+
+@media (min-width: 768px) {
+  .cloths__text-wrap {
+    padding: 0 30px 40px 30px; }
+  .cloths__text {
+    font-size: 18px; } }
+
+@media (min-width: 1200px) {
+  .cloths__text-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 50px 70px 50px; }
+  .cloths__text {
+    font-size: 22px; } }

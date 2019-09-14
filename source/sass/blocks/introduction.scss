@@ -5,8 +5,13 @@
 
     &--english,
     &--pre-school,
-    &--creative-studio{
+    &--creative-studio,
+    &--science {
         background-image: url("../img/bg/school.png");
+    }
+
+    &--gymnastics {
+        background-image: url("../img/bg/sport.png");
     }
 }
 

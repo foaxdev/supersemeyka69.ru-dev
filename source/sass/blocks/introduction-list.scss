@@ -43,6 +43,14 @@
     background-image: url("../img/list-icons/palette.png");
 }
 
+.introduction-list--science li::before {
+    background-image: url("../img/list-icons/microscope.png");
+}
+
+.introduction-list--gymnastics li::before {
+    background-image: url("../img/list-icons/gymnastics.png");
+}
+
 .introduction__link {
     display: flex;
     justify-content: center;
