@@ -745,7 +745,7 @@ input[type="file"].visually-hidden {
   margin-top: 100px; }
   .introduction--english, .introduction--pre-school, .introduction--creative-studio, .introduction--science {
     background-image: url("../img/bg/school.png"); }
-  .introduction--gymnastics, .introduction--kickboxing {
+  .introduction--gymnastics, .introduction--kickboxing, .introduction--kids-fitness {
     background-image: url("../img/bg/sport.png"); }
 
 .introduction__image {
@@ -1250,6 +1250,9 @@ input[type="file"].visually-hidden {
 
 .introduction-list--kickboxing li::before {
   background-image: url("../img/list-icons/kickboxing.png"); }
+
+.introduction-list--kids-fitness li::before {
+  background-image: url("../img/list-icons/kids-fitness.png"); }
 
 .introduction__link {
   display: -webkit-box;

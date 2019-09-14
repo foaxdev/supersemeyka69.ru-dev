@@ -55,6 +55,10 @@
     background-image: url("../img/list-icons/kickboxing.png");
 }
 
+.introduction-list--kids-fitness li::before {
+    background-image: url("../img/list-icons/kids-fitness.png");
+}
+
 .introduction__link {
     display: flex;
     justify-content: center;
