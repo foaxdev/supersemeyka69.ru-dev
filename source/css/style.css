@@ -743,10 +743,11 @@ input[type="file"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 100px; }
-  .introduction--english, .introduction--pre-school {
+  .introduction--english, .introduction--pre-school, .introduction--creative-studio {
     background-image: url("../img/bg/school.png"); }
 
 .introduction__image {
+  height: auto;
   border-top: 3px solid #6a296c;
   border-bottom: 3px solid #6a296c; }
 
@@ -773,6 +774,8 @@ input[type="file"].visually-hidden {
   line-height: 1.2;
   letter-spacing: normal;
   color: #6a296c; }
+  .introduction__description:not(:first-child) {
+    padding-top: 0; }
 
 @media (min-width: 768px) {
   .introduction {
@@ -1233,6 +1236,9 @@ input[type="file"].visually-hidden {
 
 .introduction-list--pre-school li::before {
   background-image: url("../img/list-icons/tick.png"); }
+
+.introduction-list--creative-studio li::before {
+  background-image: url("../img/list-icons/palette.png"); }
 
 .introduction__link {
   display: -webkit-box;

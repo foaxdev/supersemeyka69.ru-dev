@@ -39,6 +39,10 @@
     background-image: url("../img/list-icons/tick.png");
 }
 
+.introduction-list--creative-studio li::before {
+    background-image: url("../img/list-icons/palette.png");
+}
+
 .introduction__link {
     display: flex;
     justify-content: center;

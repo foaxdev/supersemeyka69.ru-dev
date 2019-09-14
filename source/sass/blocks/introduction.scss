@@ -4,12 +4,15 @@
     margin-top: 100px;
 
     &--english,
-    &--pre-school {
+    &--pre-school,
+    &--creative-studio{
         background-image: url("../img/bg/school.png");
     }
 }
 
 .introduction__image {
+    height: auto;
+
     border-top: 3px solid $violet;
     border-bottom: 3px solid $violet;
 }
@@ -40,6 +43,10 @@
     line-height: 1.2;
     letter-spacing: normal;
     color: $violet;
+
+    &:not(:first-child){
+        padding-top: 0;
+    }
 }
 
 @media (min-width: $tablet-width) {
