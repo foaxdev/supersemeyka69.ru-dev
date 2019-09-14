@@ -1,0 +1,107 @@
+.faculties-list {
+    @include list-reset();
+    display: flex;
+    flex-direction: column;
+}
+
+.faculties-list__item {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.faculties-list__item:hover .faculties-list__title,
+.faculties-list__item:focus .faculties-list__title {
+    background-color: $shadow-orange;
+}
+
+.faculties-list__item:active .faculties-list__title {
+    opacity: 0.5;
+}
+
+.faculties-list__image {
+    display: none;
+}
+
+.faculties-list__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    height: 50px;
+
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: $orange;
+}
+
+@media (min-width: $tablet-width) {
+    .faculties-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        padding: 40px 30px 50px 30px;
+    }
+
+    .faculties-list__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        width: 30%;
+
+        overflow: hidden;
+        border-radius: 30px;
+    }
+
+    .faculties-list__image {
+        display: block;
+
+        border-radius: 30px 30px 0 0;
+    }
+
+    .faculties-list__title {
+        height: 90px;
+
+        font-size: 22px;
+        font-weight: 700;
+
+        border-radius: 0 0 30px 30px;
+    }
+
+    .faculties-list__item:hover .faculties-list__image,
+    .faculties-list__item:focus .faculties-list__image {
+        transform: scale(1.05) translateY(-7px);
+    }
+
+    .faculties-list__item:hover,
+    .faculties-list__item:focus,
+    .faculties-list__item:active {
+        box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.4);
+        outline: none;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .faculties-list {
+        justify-content: flex-start;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 40px 50px 50px 50px;
+    }
+
+    .faculties-list__item {
+        width: 320px;
+    }
+
+    .faculties-list__item:not(:nth-child(3n)) {
+        margin-right: 70px;
+    }
+}
