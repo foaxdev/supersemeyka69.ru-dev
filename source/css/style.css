@@ -743,7 +743,7 @@ input[type="file"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 100px; }
-  .introduction--english, .introduction--pre-school, .introduction--creative-studio, .introduction--science {
+  .introduction--english, .introduction--pre-school, .introduction--creative-studio, .introduction--science, .introduction--acting {
     background-image: url("../img/bg/school.png"); }
   .introduction--gymnastics, .introduction--kickboxing, .introduction--kids-fitness, .introduction--fitness-training {
     background-image: url("../img/bg/sport.png"); }
@@ -1256,6 +1256,9 @@ input[type="file"].visually-hidden {
 
 .introduction-list--fitness-training li::before {
   background-image: url("../img/list-icons/fitness-training.png"); }
+
+.introduction-list--acting li::before {
+  background-image: url("../img/list-icons/acting.png"); }
 
 .introduction__link {
   display: -webkit-box;

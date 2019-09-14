@@ -63,6 +63,10 @@
     background-image: url("../img/list-icons/fitness-training.png");
 }
 
+.introduction-list--acting li::before {
+    background-image: url("../img/list-icons/acting.png");
+}
+
 .introduction__link {
     display: flex;
     justify-content: center;
