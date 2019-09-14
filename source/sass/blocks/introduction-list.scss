@@ -59,6 +59,10 @@
     background-image: url("../img/list-icons/kids-fitness.png");
 }
 
+.introduction-list--fitness-training li::before {
+    background-image: url("../img/list-icons/fitness-training.png");
+}
+
 .introduction__link {
     display: flex;
     justify-content: center;
