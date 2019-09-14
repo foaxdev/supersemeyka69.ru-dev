@@ -10,7 +10,8 @@
         background-image: url("../img/bg/school.png");
     }
 
-    &--gymnastics {
+    &--gymnastics,
+    &--kickboxing {
         background-image: url("../img/bg/sport.png");
     }
 }

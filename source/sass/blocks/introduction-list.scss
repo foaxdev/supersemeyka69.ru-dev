@@ -51,6 +51,10 @@
     background-image: url("../img/list-icons/gymnastics.png");
 }
 
+.introduction-list--kickboxing li::before {
+    background-image: url("../img/list-icons/kickboxing.png");
+}
+
 .introduction__link {
     display: flex;
     justify-content: center;
