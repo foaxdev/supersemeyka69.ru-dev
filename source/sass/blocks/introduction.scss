@@ -1,19 +1,78 @@
+.introduction {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+    &--english {
+        background-image: url("../img/bg/school.png");
+    }
+}
+
+.introduction__image {
+    border-top: 3px solid $violet;
+    border-bottom: 3px solid $violet;
+}
+
 .introduction__video {
     display: block;
     width: 100%;
-    margin: 100px 0 0 0;
+    margin: 0;
 
     object-fit: cover;
 }
 
+.introduction__wrap {
+    margin: 20px 20px 30px 20px;
+
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.3);
+}
+
+.introduction__description {
+    padding: 20px;
+    margin: 0;
+
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: $violet;
+}
+
 @media (min-width: $tablet-width) {
-    .introduction__video {
+    .introduction {
         margin-top: 110px;
+    }
+
+    .introduction__image {
+        display: block;
+        margin: 0 auto;
+
+        border: 3px solid $violet;
+    }
+
+    .introduction__wrap {
+        margin: 30px 30px 40px 30px;
+
+        border-radius: 20px;
+    }
+
+    .introduction__description {
+        padding: 30px;
+
+        font-size: 22px;
     }
 }
 
 @media (min-width: $desktop-width) {
-    .introduction__video {
+    .introduction {
         margin-top: 206px;
+    }
+
+    .introduction__wrap {
+        width: 1100px;
+        margin: 30px auto 40px auto;
     }
 }

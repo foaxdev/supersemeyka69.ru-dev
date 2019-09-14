@@ -1,0 +1,94 @@
+.introduction-list {
+    @include list-reset();
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 30px 20px;
+}
+
+.introduction-list__item {
+    position: relative;
+
+    padding-left: 25px;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: $violet;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 16px;
+        height: 16px;
+
+        background-repeat: no-repeat;
+        background-size: 16px;
+    }
+}
+
+.introduction-list--english li::before {
+    background-image: url("../img/list-icons/hat.png");
+}
+
+.introduction__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px 10px 20px;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: $white;
+    text-transform: uppercase;
+
+    background-color: $violet;
+    border-radius: 0 0 10px 10px;
+
+    &:hover,
+    &:focus {
+        color: $violet;
+        font-weight: 700;
+
+        background-color: $light-violet;
+        outline: none;
+    }
+
+    &:active {
+        opacity: 0.3;
+        outline: none;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .introduction-list {
+        padding: 0 30px 30px 30px;
+    }
+
+    .introduction-list__item {
+        padding-left: 30px;
+        margin-bottom: 15px;
+
+        font-size: 18px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .introduction__link {
+        padding: 25px 20px 20px 20px;
+
+        font-size: 20px;
+        font-weight: 700;
+
+        border-radius: 0 0 20px 20px;
+    }
+}

@@ -1,0 +1,55 @@
+.modal-toggle-button {
+    width: 100%;
+    padding: 15px 30px 10px 30px;
+
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: $green;
+    border: none;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $shadow-green;
+        outline: none;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.modal-toggle-button--faculty {
+    color: $violet;
+
+    background-color: $light-violet;
+
+    &:hover,
+    &:focus {
+        background-color: $violet;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .modal-toggle-button {
+        display: none;
+    }
+
+    .modal-toggle-button--faculty {
+        display: flex;
+        justify-content: center;
+
+        &:hover,
+        &:focus {
+            background-color: $light-violet;
+        }
+    }
+}

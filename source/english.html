@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Английский язык</title>
+        <link rel="stylesheet" href="css/style.min.css">
+
+        <link rel="preload" href="fonts/bloggersans.woff2" as="font">
+        <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
+
+        <script src="js/picturefill.min.js" async></script>
+    </head>
+    <body>
+        <div class="svg-template">
+            <include src="build/img/sprite.svg"></include>
+        </div>
+        <header class="header">
+            <div class="header__top-wrap">
+                <a href="/">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="img/logos/logo-tablet.png">
+                        <img class="header__logo" src="img/logos/logo-mobile-big.png" width="228" height="60" alt="Логотип развивающего центра Суперсемейка">
+                    </picture>
+                </a>
+                <b class="header__tagline">Развивающий центр</b>
+                <button class="header__button-toggle" type="button">Открыть/закрыть меню</button>
+            </div>
+            <div class="header__wrap">
+                <div class="header__menu-wrap">
+                    <nav class="main-nav">
+                        <ul class="header__list nav-list">
+                            <li class="nav-list__item"><a class="nav-list__link" href="#duration">Продолжительность</a></li>
+                            <li class="nav-list__item"><a class="nav-list__link" href="#quantity">Численность групп</a></li>
+                            <li class="nav-list__item"><a class="nav-list__link" href="#price">Стоимость</a></li>
+                            <li class="nav-list__item"><a class="nav-list__link" href="#materials">Учебные материалы</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts-social-wrap">
+                        <ul class="header__social-list top-social-list">
+                            <li class="top-social-list__item">
+                                <a class="top-social-list__link" href="https://www.instagram.com/supersemeyka_69">
+                                    Инстаграм
+                                    <svg class="top-social-list__svg" width="35" height="35"><use xlink:href="#icon-instagram"></use></svg>
+                                </a>
+                            </li>
+                            <li class="top-social-list__item">
+                                <a class="top-social-list__link" href="https://vk.com/supersemeyka69">
+                                    ВКонтакте
+                                    <svg class="top-social-list__svg" width="35" height="35"><use xlink:href="#icon-vk"></use></svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="header__contacts-list top-contacts-list">
+                            <li class="top-contacts-list__item">
+                                <a class="top-contacts-list__link" href="tel:+79206940404">8 920 694-04-04</a>
+                            </li>
+                            <li class="top-contacts-list__item">
+                                <p class="top-contacts-list__address">г.Тверь ул. Псковская д.4</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="introduction introduction--english">
+                <h1 class="section-header section-header--main">Английский язык</h1>
+                <picture>
+                    <img class="introduction__image" src="img/faculties/preview/english.jpg" width="770" height="447" alt="Фотография с занятия по английскому языку">
+                </picture>
+                <div class="introduction__wrap">
+                    <p class="introduction__description">Все занятия проходят в игровой форме, чтобы сохранить интерес ребят.</p>
+                    <ul class="introduction-list introduction-list--english">
+                        <li class="introduction-list__item">знакомство с новой культурой, традициями</li>
+                        <li class="introduction-list__item">расширение словарного запаса</li>
+                        <li class="introduction-list__item">мотивация детей на дальнейшее изучение английского языка в школе</li>
+                        <li class="introduction-list__item">привитие базовых учебных навыков</li>
+                    </ul>
+                    <a class="introduction__link" href="mailto:roman-mamagulashvili@mail.ru">Записаться</a>
+                </div>
+            </section>
+
+            <section class="duration" id="duration">
+                <h2 class="section-header">Количество занятий и их продолжительность</h2>
+                <div class="duration__text-wrap">
+                    <p class="duration__text">Старшая группа (7-8 лет) - 1 раз в неделю по 60 мин.</p>
+                    <p class="duration__text">Младшая группа (5-6 лет) - 1 раз в неделю по 60 мин.</p>
+                </div>
+            </section>
+
+            <section class="quantity" id="quantity">
+                <h2 class="section-header">Количество человек в группе</h2>
+                <div class="quantity__text-wrap">
+                    <p class="quantity__text">Старшая группа (7-8 лет) - до 10 человек в группе.</p>
+                    <p class="quantity__text">Младшая группа (5-6 лет) - до 8 человек в группе.</p>
+                </div>
+            </section>
+
+            <section class="price" id="price">
+                <h2 class="section-header">Стоимость</h2>
+                <div class="price__text-wrap">
+                    <p class="price__text">Старшая группа (7-8 лет) - 1 600 руб./мес. - 4 занятия по 60 мин.</p>
+                    <p class="price__text">Младшая группа (5-6 лет) - 1 600 руб./мес. - 4 занятия по 60 мин.</p>
+                </div>
+            </section>
+
+            <section class="materials" id="materials">
+                <h2 class="section-header">Учебный материал</h2>
+                <p class="materials__note"><sup>*</sup>приобретается дополнительно</p>
+                <ul class="materials-list">
+                    <li class="materials-list__item">
+                        <button class="modal-toggle-button modal-toggle-button--faculty" type="button">Младшая группа</button>
+                        <div class="materials-list__wrap">
+                            <a href="img/materials/english-pre-school/book.png">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="img/materials/english-pre-school/book-desktop.png">
+                                    <source media="(min-width: 768px)" srcset="img/materials/english-pre-school/book-tablet.png">
+                                    <img class="materials-list__image modal__image" src="img/materials/english-pre-school/book-mobile.png" alt="Скан учебника Английский язык для малышей">
+                                </picture>
+                            </a>
+                            <div class="modal">
+                                <button class="modal__close-button" type="button">Закрыть</button>
+                                <a href="img/materials/english-pre-school/book.png">
+                                    <picture>
+                                        <img class="materials-list__original-image modal__original-image" src="img/materials/english-pre-school/book-mobile.png" alt="Скан учебника Английский язык для малышей">
+                                    </picture>
+                                </a>
+                            </div>
+                            <a href="img/materials/english-pre-school/workbook.png">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="img/materials/english-pre-school/workbook-desktop.png">
+                                    <source media="(min-width: 768px)" srcset="img/materials/english-pre-school/workbook-tablet.png">
+                                    <img class="materials-list__image modal__image" src="img/materials/english-pre-school/workbook-mobile.png" alt="Скан тетрадь для английского языка">
+                                </picture>
+                            </a>
+                            <div class="modal">
+                                <button class="modal__close-button" type="button">Закрыть</button>
+                                <a href="img/materials/english-pre-school/workbook.png">
+                                    <picture>
+                                        <img class="materials-list__original-image modal__original-image" src="img/materials/english-pre-school/workbook-mobile.png" alt="Скан тетрадь для английского языка">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="materials-list__item">
+                        <button class="modal-toggle-button modal-toggle-button--faculty" type="button">Старшая группа</button>
+                        <div class="materials-list__wrap">
+                            <a href="img/materials/english-school/book.png">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="img/materials/english-school/book-desktop.png">
+                                    <source media="(min-width: 768px)" srcset="img/materials/english-school/book-tablet.png">
+                                    <img class="materials-list__image modal__image" src="img/materials/english-school/book-mobile.png" alt="Скан учебника Английский язык для младших школьников">
+                                </picture>
+                            </a>
+                            <div class="modal">
+                                <button class="modal__close-button" type="button">Закрыть</button>
+                                <a href="img/materials/english-school/book.png">
+                                    <picture>
+                                        <img class="materials-list__original-image modal__original-image" src="img/materials/english-school/book-mobile.png" alt="Скан учебника Английский язык для младших школьников">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="overlay"></div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="copyright">
+                <div class="copyright__text">Иконка VK сделана <a class="copyright__link" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> с сайта <a class="copyright__link"> href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div class="copyright__text">Иконка телефона сделана <a class="copyright__link" href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> с сайта <a class="copyright__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div class="copyright__text">Иконка меню сделана <a class="copyright__link" href="https://www.flaticon.com/authors/google" title="Google">Google</a> с сайта <a class="copyright__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div class="copyright__text">Иконка закрытия меню сделана <a class="copyright__link" href="https://www.flaticon.com/authors/twitter" title="Twitter">Twitter</a> с сайта <a class="copyright__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div class="copyright__text">Иконка Instagram сделана <a class="copyright__link" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a class="copyright__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            </div>
+        </footer>
+        <script src="js/script.min.js" defer></script>
+    </body>
+</html>

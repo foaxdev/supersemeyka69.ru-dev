@@ -17,6 +17,40 @@
     background-color: $white;
 }
 
+.header--scrollable {
+    & .header__logo {
+        margin: 5px 0 0 30px;
+    }
+
+    & .header__button-toggle {
+        top: 25px;
+    }
+
+    & .header__tagline {
+        top: 35px;
+    }
+
+    & .header__menu-wrap {
+        padding-bottom: 5px;
+    }
+
+    & .header__list {
+        margin-top: 5px;
+
+        & a {
+            padding: 5px 0 0 0;
+        }
+    }
+
+    & .header__contacts-list {
+        top: -10px;
+    }
+
+    & .header__social-list {
+        top: -15px;
+    }
+}
+
 .header__contacts-social-wrap {
     position: relative;
 
@@ -117,6 +151,11 @@
 }
 
 @media (min-width: $tablet-width) {
+    .header--scrollable {
+        & .header__button-toggle {
+            top: 35px;
+        }
+    }
     .header__logo {
         margin: 15px 0 5px 30px;
         width: 308px;

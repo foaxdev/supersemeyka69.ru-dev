@@ -13,9 +13,9 @@ function initializeScheduleLogic(elsButtonToggleSchedule) {
     for (let i = 0; i < elsButtonToggleSchedule.length; i++) {
         let elSchedule = elsButtonToggleSchedule[i].nextElementSibling;
         if (elSchedule)
-            elSchedule.classList.add("schedule-list__image--hidden");
+            elSchedule.classList.add("modal__image--hidden");
         elsButtonToggleSchedule[i].addEventListener("click", function () {
-            elSchedule.classList.toggle("schedule-list__image--hidden");
+            elSchedule.classList.toggle("modal__image--hidden");
         });
     }
 }
@@ -29,9 +29,9 @@ function initializeScheduleImagesLogic(elsSchedulePreviews) {
                 evt.preventDefault();
                 if (document.body.clientWidth >= 1200) {
                     elScheduleFullImage.classList.toggle("modal--show");
-                    let elOverlay = document.querySelector(".overlay-schedule");
+                    let elOverlay = document.querySelector(".overlay");
                     if (elOverlay)
-                        elOverlay.classList.add("overlay-schedule--show");
+                        elOverlay.classList.add("overlay--show");
                 }
             });
         }
@@ -42,13 +42,17 @@ function initializeCloseModalWindowLogic(elsScheduleButtonCloseModal) {
     for (let i = 0; i < elsScheduleButtonCloseModal.length; i++) {
         elsScheduleButtonCloseModal[i].addEventListener("click", function () {
             let elModalWindow = elsScheduleButtonCloseModal[i].parentElement;
-            let elOverlay = document.querySelector(".overlay-schedule");
+            let elOverlay = document.querySelector(".overlay");
             if (elModalWindow && elOverlay) {
                 elModalWindow.classList.toggle("modal--show");
-                elOverlay.classList.toggle("overlay-schedule--show");
+                elOverlay.classList.toggle("overlay--show");
             }
         });
     }
+}
+
+function checkIfPageIsOnTheTop(elHeader) {
+    elHeader.classList.toggle("header--scrollable", (window.pageYOffset >= 65));
 }
 
 let elButtonToggle = document.querySelector(".header__button-toggle");
@@ -58,11 +62,11 @@ let elMainTagline = document.querySelector(".header__tagline");
 if (elButtonToggle && elMenuWrap && elMainTagline)
     initializeMainMenu(elButtonToggle, elMenuWrap, elMainTagline);
 
-let elsButtonToggleSchedule = document.querySelectorAll(".schedule-list__weekday-button");
+let elsButtonToggleSchedule = document.querySelectorAll(".modal-toggle-button");
 if (elsButtonToggleSchedule)
     initializeScheduleLogic(elsButtonToggleSchedule);
 
-let elsSchedulePreviews = document.querySelectorAll(".schedule-list__image");
+let elsSchedulePreviews = document.querySelectorAll(".modal__image");
 if (elsSchedulePreviews)
     initializeScheduleImagesLogic(elsSchedulePreviews);
 
@@ -70,3 +74,8 @@ let elsScheduleButtonCloseModal = document.querySelectorAll(".modal__close-butto
 if (elsScheduleButtonCloseModal)
     initializeCloseModalWindowLogic(elsScheduleButtonCloseModal);
 
+window.addEventListener("scroll", function () {
+    let elHeader = document.querySelector(".header");
+    if (elHeader)
+        checkIfPageIsOnTheTop(elHeader);
+});

@@ -35,8 +35,8 @@
 
 @media (min-width: $desktop-width) {
     .top-social-list {
-        position: absolute;
-        top: -195px;
+        position: fixed;
+        top: 0;
         right: 310px;
     }
 

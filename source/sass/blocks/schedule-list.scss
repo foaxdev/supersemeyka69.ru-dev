@@ -13,42 +13,6 @@
     width: 100%;
 }
 
-.schedule-list__image {
-    height: auto;
-
-    &--hidden {
-        display: none;
-    }
-}
-
-.schedule-list__weekday-button {
-    padding: 15px 30px 10px 30px;
-
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
-    color: $white;
-    text-transform: uppercase;
-    text-align: center;
-
-    background-color: $green;
-    border: none;
-
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-        background-color: $shadow-green;
-        outline: none;
-    }
-
-    &:active {
-        opacity: 0.5;
-    }
-}
-
 @media (min-width: $tablet-width) {
     .schedule-list {
         flex-direction: row;
@@ -69,10 +33,6 @@
         margin: 0 auto;
     }
 
-    .schedule-list__weekday-button {
-        display: none;
-    }
-
     .schedule-list__item {
         width: auto;
         margin-bottom: 30px;
@@ -84,17 +44,6 @@
 
         &:hover {
             box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.4);
-        }
-    }
-
-    .schedule-list__image {
-        display: block;
-        width: 340px;
-
-        border-radius: 6px;
-
-        &--hidden {
-            display: block;
         }
     }
 }
