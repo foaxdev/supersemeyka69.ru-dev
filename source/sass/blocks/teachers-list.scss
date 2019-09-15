@@ -1,0 +1,132 @@
+.teachers-list {
+    @include list-reset();
+    display: flex;
+    flex-direction: column;
+}
+
+.teachers-list__image-preview {
+    display: none;
+}
+
+.teachers-list__subject {
+    display: block;
+    width: 100%;
+    padding: 10px 30px 5px 30px;
+
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-color: $violet;
+}
+
+.teachers-list__info-wrap {
+    display: flex;
+    flex-direction: column;
+
+    &--hidden {
+        display: none;
+    }
+}
+
+.teachers-list__close-button {
+    display: none;
+}
+
+@media (min-width: $tablet-width) {
+    .teachers-list {
+        padding: 0 30px 30px 30px;
+    }
+
+    .teachers-list__item {
+        width: 45%;
+    }
+
+    .teachers-list__image-preview {
+        display: block;
+    }
+
+    .teachers-list__image {
+        display: none;
+    }
+
+    .teachers-list__subject {
+        display: none;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .teachers-list {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 50px 50px 50px;
+    }
+
+    .teachers-list__item {
+        width: 33%;
+    }
+
+    .teachers-list__image {
+        display: block;
+        width: 760px;
+    }
+
+    .teachers-list__image-preview {
+        width: 340px;
+    }
+
+    .teachers-list__info-wrap {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 3;
+
+        justify-content: center;
+        width: 1100px;
+        height: 800px;
+        margin-left: -550px;
+        margin-top: -400px;
+        padding: 40px 60px;
+
+        background-color: $white;
+        box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    .teachers-list__close-button {
+        @include hide-text();
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: block;
+        width: 60px;
+        height: 60px;
+
+        background-color: rgba(0, 0, 0, 0.5);
+        background-image: url("../img/menu-close.svg");
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+
+        &:hover,
+        &:focus {
+            opacity: 0.6;
+            outline: none;
+        }
+
+        &:active {
+            opacity: 0.3;
+            outline: none;
+        }
+    }
+
+    .teachers-list__main-info-wrap {
+        display: flex;
+    }
+}

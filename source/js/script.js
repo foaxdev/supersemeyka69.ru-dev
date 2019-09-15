@@ -67,6 +67,17 @@ function checkIfPageIsOnTheTop(elHeader) {
     elHeader.classList.toggle("header--scrollable", (window.pageYOffset >= 65));
 }
 
+function initializeTeachersInfo(elsTeachersToggleButtons) {
+    for (let i = 0; i < elsTeachersToggleButtons.length; i++) {
+        elsTeachersToggleButtons[i].addEventListener("click", function () {
+            let elTeacherInfoWrap = elsTeachersToggleButtons[i].parentElement.nextElementSibling;
+            if (elTeacherInfoWrap) {
+                elTeacherInfoWrap.classList.toggle("teachers-list__info-wrap--hidden");
+            }
+        });
+    }
+}
+
 let elButtonToggle = document.querySelector(".header__button-toggle");
 let elMenuWrap = document.querySelector(".header__menu-wrap");
 let elMainTagline = document.querySelector(".header__tagline");
@@ -91,3 +102,21 @@ window.addEventListener("scroll", function () {
     if (elHeader)
         checkIfPageIsOnTheTop(elHeader);
 });
+
+let elsTeachersInfoWrap = document.querySelectorAll(".teachers-list__info-wrap");
+if (elsTeachersInfoWrap)
+    for (let i = 0; i < elsTeachersInfoWrap.length; i++)
+        elsTeachersInfoWrap[i].classList.add("teachers-list__info-wrap--hidden");
+
+let elsTeachersToggleButtons = document.querySelectorAll(".teachers-list__button-toggle");
+if (elsTeachersToggleButtons) {
+    initializeTeachersInfo(elsTeachersToggleButtons);
+
+    let elTeacherInfoWrapCloseButton = document.querySelector(".teachers-list__close-button");
+    let elTeachersWrap = elTeacherInfoWrapCloseButton.parentElement;
+    if (elTeacherInfoWrapCloseButton && elTeachersWrap) {
+        elTeacherInfoWrapCloseButton.addEventListener("click", function () {
+            elTeachersWrap.classList.toggle("teachers-list__info-wrap--hidden");
+        });
+    }
+}

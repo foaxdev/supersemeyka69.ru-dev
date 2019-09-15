@@ -1,0 +1,40 @@
+.teacher-description-list {
+    @include list-reset();
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+
+.teacher-description-list__item {
+    position: relative;
+
+    padding-left: 25px;
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: $violet;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 16px;
+        height: 16px;
+
+        background-image: url("../img/list-icons/tick.png");
+        background-repeat: no-repeat;
+        background-size: 16px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .teacher-description-list {
+        padding: 0 16px 0 50px;
+    }
+}

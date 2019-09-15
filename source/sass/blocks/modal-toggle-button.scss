@@ -25,6 +25,19 @@
     &:active {
         opacity: 0.5;
     }
+
+    &--teachers {
+        display: none;
+    }
+
+    &--teachers-name {
+        background-color: $orange;
+
+        &:hover,
+        &:focus {
+            background-color: $shadow-orange;
+        }
+    }
 }
 
 .modal-toggle-button--faculty {
@@ -40,9 +53,40 @@
     }
 }
 
+@media (min-width: $tablet-width) {
+    .modal-toggle-button {
+        &--teachers {
+            display: block;
+
+            background-color: $violet;
+
+            &:hover,
+            &:focus {
+                background-color: $light-violet;
+            }
+        }
+
+        &--teachers-name {
+            display: none;
+        }
+    }
+}
+
 @media (min-width: $desktop-width) {
     .modal-toggle-button {
         display: none;
+
+        &--teachers {
+            display: block;
+            width: 340px;
+
+            background-color: $violet;
+
+            &:hover,
+            &:focus {
+                background-color: $light-violet;
+            }
+        }
     }
 
     .modal-toggle-button--faculty {

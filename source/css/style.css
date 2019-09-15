@@ -1179,8 +1179,8 @@ input[type="file"].visually-hidden {
     border-radius: 0 0 30px 30px; }
   .faculties-list__item:hover .faculties-list__image,
   .faculties-list__item:focus .faculties-list__image {
-    -webkit-transform: scale(1.05) translateY(-7px);
-            transform: scale(1.05) translateY(-7px); }
+    -webkit-transform: scale(1.05) translateY(-5px);
+            transform: scale(1.05) translateY(-5px); }
   .faculties-list__item:hover,
   .faculties-list__item:focus,
   .faculties-list__item:active {
@@ -1459,6 +1459,12 @@ input[type="file"].visually-hidden {
     outline: none; }
   .modal-toggle-button:active {
     opacity: 0.5; }
+  .modal-toggle-button--teachers {
+    display: none; }
+  .modal-toggle-button--teachers-name {
+    background-color: #ff9100; }
+    .modal-toggle-button--teachers-name:hover, .modal-toggle-button--teachers-name:focus {
+      background-color: #ff6d05; }
 
 .modal-toggle-button--faculty {
   color: #6a296c;
@@ -1467,9 +1473,24 @@ input[type="file"].visually-hidden {
     color: #ffffff;
     background-color: #6a296c; }
 
+@media (min-width: 768px) {
+  .modal-toggle-button--teachers {
+    display: block;
+    background-color: #6a296c; }
+    .modal-toggle-button--teachers:hover, .modal-toggle-button--teachers:focus {
+      background-color: #f1d1ff; }
+  .modal-toggle-button--teachers-name {
+    display: none; } }
+
 @media (min-width: 1200px) {
   .modal-toggle-button {
     display: none; }
+    .modal-toggle-button--teachers {
+      display: block;
+      width: 340px;
+      background-color: #6a296c; }
+      .modal-toggle-button--teachers:hover, .modal-toggle-button--teachers:focus {
+        background-color: #f1d1ff; }
   .modal-toggle-button--faculty {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1592,3 +1613,195 @@ input[type="file"].visually-hidden {
     padding: 30px 50px 70px 50px; }
   .cloths__text {
     font-size: 22px; } }
+
+.teachers-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.teachers-list__image-preview {
+  display: none; }
+
+.teachers-list__subject {
+  display: block;
+  width: 100%;
+  padding: 10px 30px 5px 30px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #6a296c; }
+
+.teachers-list__info-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .teachers-list__info-wrap--hidden {
+    display: none; }
+
+.teachers-list__close-button {
+  display: none; }
+
+@media (min-width: 768px) {
+  .teachers-list {
+    padding: 0 30px 30px 30px; }
+  .teachers-list__item {
+    width: 45%; }
+  .teachers-list__image-preview {
+    display: block; }
+  .teachers-list__image {
+    display: none; }
+  .teachers-list__subject {
+    display: none; } }
+
+@media (min-width: 1200px) {
+  .teachers-list {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px 50px 50px; }
+  .teachers-list__item {
+    width: 33%; }
+  .teachers-list__image {
+    display: block;
+    width: 760px; }
+  .teachers-list__image-preview {
+    width: 340px; }
+  .teachers-list__info-wrap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 1100px;
+    height: 800px;
+    margin-left: -550px;
+    margin-top: -400px;
+    padding: 40px 60px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.4);
+            box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.4); }
+  .teachers-list__close-button {
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("../img/menu-close.svg");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none; }
+    .teachers-list__close-button:hover, .teachers-list__close-button:focus {
+      opacity: 0.6;
+      outline: none; }
+    .teachers-list__close-button:active {
+      opacity: 0.3;
+      outline: none; }
+  .teachers-list__main-info-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.teacher-description-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 20px; }
+
+.teacher-description-list__item {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #6a296c; }
+  .teacher-description-list__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/list-icons/tick.png");
+    background-repeat: no-repeat;
+    background-size: 16px; }
+
+@media (min-width: 1200px) {
+  .teacher-description-list {
+    padding: 0 16px 0 50px; } }
+
+.diplomas__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+@media (min-width: 768px) {
+  .diplomas__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .diplomas__wrap > a {
+      width: 45%; } }
+
+@media (min-width: 1200px) {
+  .diplomas {
+    margin-top: 40px; }
+  .diplomas__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .diplomas__wrap > a {
+      width: 10%;
+      margin-right: 15px;
+      margin-bottom: 15px; }
+  .diplomas__image {
+    border-radius: 0; } }

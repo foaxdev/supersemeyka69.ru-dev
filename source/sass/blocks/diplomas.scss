@@ -1,0 +1,39 @@
+.diplomas__wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+    .diplomas__wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & > a {
+            width: 45%;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .diplomas {
+        margin-top: 40px;
+    }
+
+    .diplomas__wrap {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        & > a {
+            width: 10%;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .diplomas__image {
+        border-radius: 0;
+    }
+}

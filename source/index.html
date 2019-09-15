@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
     <title>Суперсемейка</title>
     <link rel="stylesheet" href="css/style.min.css">
 
@@ -31,8 +32,9 @@
                 <nav class="main-nav">
                     <ul class="header__list nav-list">
                         <li class="nav-list__item"><a class="nav-list__link" href="#schedule">Расписание</a></li>
-                        <li class="nav-list__item"><a class="nav-list__link" href="#faculties">Направления</a></li>
                         <li class="nav-list__item"><a class="nav-list__link" href="#features">О нас</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#faculties">Направления</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#teachers">Преподаватели</a></li>
                         <li class="nav-list__item"><a class="nav-list__link" href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
@@ -183,7 +185,6 @@
                     </div>
                 </li>
             </ul>
-            <div class="overlay"></div>
         </section>
 
         <section class="features" id="features">
@@ -302,6 +303,254 @@
             </ul>
         </section>
 
+        <section class="teachers" id="teachers">
+            <h2 class="section-header">Преподаватели</h2>
+
+            <ul class="teachers-list">
+                <li class="teachers-list__item">
+                    <div class="teachers-list__short-info">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/teachers/prokopenko-desktop.jpg">
+                            <img class="teachers-list__image-preview" src="img/teachers/prokopenko-tablet.jpg" alt="Фотография педагога Прокопенко Елены Алексеевны">
+                        </picture>
+                        <button class="teachers-list__button-toggle modal-toggle-button modal-toggle-button--teachers">Информация</button>
+                        <span class="teachers-list__subject">Подготовка к школе</span>
+                        <button class="teachers-list__button-toggle modal-toggle-button modal-toggle-button--teachers-name">Прокопенко Елена Алексеевна</button>
+                    </div>
+                    <div class="teachers-list__info-wrap">
+                        <button class="teachers-list__close-button" type="button">Закрыть</button>
+                        <div class="teachers-list__main-info-wrap">
+                            <picture>
+                                <img class="teachers-list__image" src="img/teachers/prokopenko-mobile.jpg" alt="Фотография педагога Прокопенко Елены Алексеевны">
+                            </picture>
+                            <ul class="teacher-description-list">
+                                <li class="teacher-description-list__item">Учитель высшей квалификационной категории.</li>
+                                <li class="teacher-description-list__item">Стаж работы в педагогике - 31 год.</li>
+                                <li class="teacher-description-list__item">В 1999 году награждена грамотой управления образования администрации города Твери.</li>
+                                <li class="teacher-description-list__item">В 2007 году награждена почётной грамотой Департамента образования Тверской области.</li>
+                                <li class="teacher-description-list__item">В 2012 году вручена благодарность администрации города Твери за многолетний добросовестный труд в отрасли образования и достигнутые успехи в обучении и воспитании подрастающего поколения.</li>
+                            </ul>
+                        </div>
+                        <div class="diplomas">
+                            <button class="modal-toggle-button" type="button">Дипломы</button>
+                            <div class="diplomas__wrap">
+                                <a href="img/dimploma/prokopenko/diploma-1.png">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/dimploma/prokopenko/diploma-1-desktop.png">
+                                        <source media="(min-width: 768px)" srcset="img/dimploma/prokopenko/diploma-1-tablet.png">
+                                        <img class="diplomas__image modal__image" src="img/dimploma/prokopenko/diploma-1-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                    </picture>
+                                </a>
+                                <div class="modal">
+                                    <button class="modal__close-button" type="button">Закрыть</button>
+                                    <a href="img/dimploma/prokopenko/diploma-1.png">
+                                        <picture>
+                                            <img class="diplomas__original-image modal__original-image" src="img/dimploma/prokopenko/diploma-1-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <a href="img/dimploma/prokopenko/diploma-2.png">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/dimploma/prokopenko/diploma-2-desktop.png">
+                                        <source media="(min-width: 768px)" srcset="img/dimploma/prokopenko/diploma-2-tablet.png">
+                                        <img class="diplomas__image modal__image" src="img/dimploma/prokopenko/diploma-2-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                    </picture>
+                                </a>
+                                <div class="modal">
+                                    <button class="modal__close-button" type="button">Закрыть</button>
+                                    <a href="img/dimploma/prokopenko/diploma-2.png">
+                                        <picture>
+                                            <img class="diplomas__original-image modal__original-image" src="img/dimploma/prokopenko/diploma-2-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <a href="img/dimploma/prokopenko/diploma-3.png">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/dimploma/prokopenko/diploma-3-desktop.png">
+                                        <source media="(min-width: 768px)" srcset="img/dimploma/prokopenko/diploma-3-tablet.png">
+                                        <img class="diplomas__image modal__image" src="img/dimploma/prokopenko/diploma-3-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                    </picture>
+                                </a>
+                                <div class="modal">
+                                    <button class="modal__close-button" type="button">Закрыть</button>
+                                    <a href="img/dimploma/prokopenko/diploma-3.png">
+                                        <picture>
+                                            <img class="diplomas__original-image modal__original-image" src="img/dimploma/prokopenko/diploma-3-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <a href="img/dimploma/prokopenko/diploma-4.png">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/dimploma/prokopenko/diploma-4-desktop.png">
+                                        <source media="(min-width: 768px)" srcset="img/dimploma/prokopenko/diploma-4-tablet.png">
+                                        <img class="diplomas__image modal__image" src="img/dimploma/prokopenko/diploma-4-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                    </picture>
+                                </a>
+                                <div class="modal">
+                                    <button class="modal__close-button" type="button">Закрыть</button>
+                                    <a href="img/dimploma/prokopenko/diploma-4.png">
+                                        <picture>
+                                            <img class="diplomas__original-image modal__original-image" src="img/dimploma/prokopenko/diploma-4-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <a href="img/dimploma/prokopenko/diploma-5.png">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/dimploma/prokopenko/diploma-5-desktop.png">
+                                        <source media="(min-width: 768px)" srcset="img/dimploma/prokopenko/diploma-5-tablet.png">
+                                        <img class="diplomas__image modal__image" src="img/dimploma/prokopenko/diploma-5-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                    </picture>
+                                </a>
+                                <div class="modal">
+                                    <button class="modal__close-button" type="button">Закрыть</button>
+                                    <a href="img/dimploma/prokopenko/diploma-5.png">
+                                        <picture>
+                                            <img class="diplomas__original-image modal__original-image" src="img/dimploma/prokopenko/diploma-5-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <a href="img/dimploma/prokopenko/diploma-6.png">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/dimploma/prokopenko/diploma-6-desktop.png">
+                                        <source media="(min-width: 768px)" srcset="img/dimploma/prokopenko/diploma-6-tablet.png">
+                                        <img class="diplomas__image modal__image" src="img/dimploma/prokopenko/diploma-6-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                    </picture>
+                                </a>
+                                <div class="modal">
+                                    <button class="modal__close-button" type="button">Закрыть</button>
+                                    <a href="img/dimploma/prokopenko/diploma-6.png">
+                                        <picture>
+                                            <img class="diplomas__original-image modal__original-image" src="img/dimploma/prokopenko/diploma-6-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <a href="img/dimploma/prokopenko/diploma-7.png">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/dimploma/prokopenko/diploma-7-desktop.png">
+                                        <source media="(min-width: 768px)" srcset="img/dimploma/prokopenko/diploma-7-tablet.png">
+                                        <img class="diplomas__image modal__image" src="img/dimploma/prokopenko/diploma-7-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                    </picture>
+                                </a>
+                                <div class="modal">
+                                    <button class="modal__close-button" type="button">Закрыть</button>
+                                    <a href="img/dimploma/prokopenko/diploma-7.png">
+                                        <picture>
+                                            <img class="diplomas__original-image modal__original-image" src="img/dimploma/prokopenko/diploma-7-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <a href="img/dimploma/prokopenko/diploma-8.png">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/dimploma/prokopenko/diploma-8-desktop.png">
+                                        <source media="(min-width: 768px)" srcset="img/dimploma/prokopenko/diploma-8-tablet.png">
+                                        <img class="diplomas__image modal__image" src="img/dimploma/prokopenko/diploma-8-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                    </picture>
+                                </a>
+                                <div class="modal">
+                                    <button class="modal__close-button" type="button">Закрыть</button>
+                                    <a href="img/dimploma/prokopenko/diploma-8.png">
+                                        <picture>
+                                            <img class="diplomas__original-image modal__original-image" src="img/dimploma/prokopenko/diploma-8-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <a href="img/dimploma/prokopenko/diploma-9.png">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/dimploma/prokopenko/diploma-9-desktop.png">
+                                        <source media="(min-width: 768px)" srcset="img/dimploma/prokopenko/diploma-9-tablet.png">
+                                        <img class="diplomas__image modal__image" src="img/dimploma/prokopenko/diploma-9-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                    </picture>
+                                </a>
+                                <div class="modal">
+                                    <button class="modal__close-button" type="button">Закрыть</button>
+                                    <a href="img/dimploma/prokopenko/diploma-9.png">
+                                        <picture>
+                                            <img class="diplomas__original-image modal__original-image" src="img/dimploma/prokopenko/diploma-9-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <a href="img/dimploma/prokopenko/diploma-10.png">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/dimploma/prokopenko/diploma-10-desktop.png">
+                                        <source media="(min-width: 768px)" srcset="img/dimploma/prokopenko/diploma-10-tablet.png">
+                                        <img class="diplomas__image modal__image" src="img/dimploma/prokopenko/diploma-10-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                    </picture>
+                                </a>
+                                <div class="modal">
+                                    <button class="modal__close-button" type="button">Закрыть</button>
+                                    <a href="img/dimploma/prokopenko/diploma-10.png">
+                                        <picture>
+                                            <img class="diplomas__original-image modal__original-image" src="img/dimploma/prokopenko/diploma-10-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <a href="img/dimploma/prokopenko/diploma-11.png">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/dimploma/prokopenko/diploma-11-desktop.png">
+                                        <source media="(min-width: 768px)" srcset="img/dimploma/prokopenko/diploma-11-tablet.png">
+                                        <img class="diplomas__image modal__image" src="img/dimploma/prokopenko/diploma-11-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                    </picture>
+                                </a>
+                                <div class="modal">
+                                    <button class="modal__close-button" type="button">Закрыть</button>
+                                    <a href="img/dimploma/prokopenko/diploma-11.png">
+                                        <picture>
+                                            <img class="diplomas__original-image modal__original-image" src="img/dimploma/prokopenko/diploma-11-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <a href="img/dimploma/prokopenko/diploma-12.png">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/dimploma/prokopenko/diploma-12-desktop.png">
+                                        <source media="(min-width: 768px)" srcset="img/dimploma/prokopenko/diploma-12-tablet.png">
+                                        <img class="diplomas__image modal__image" src="img/dimploma/prokopenko/diploma-12-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                    </picture>
+                                </a>
+                                <div class="modal">
+                                    <button class="modal__close-button" type="button">Закрыть</button>
+                                    <a href="img/dimploma/prokopenko/diploma-12.png">
+                                        <picture>
+                                            <img class="diplomas__original-image modal__original-image" src="img/dimploma/prokopenko/diploma-12-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <a href="img/dimploma/prokopenko/diploma-13.png">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/dimploma/prokopenko/diploma-13-desktop.png">
+                                        <source media="(min-width: 768px)" srcset="img/dimploma/prokopenko/diploma-13-tablet.png">
+                                        <img class="diplomas__image modal__image" src="img/dimploma/prokopenko/diploma-13-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                    </picture>
+                                </a>
+                                <div class="modal">
+                                    <button class="modal__close-button" type="button">Закрыть</button>
+                                    <a href="img/dimploma/prokopenko/diploma-13.png">
+                                        <picture>
+                                            <img class="diplomas__original-image modal__original-image" src="img/dimploma/prokopenko/diploma-13-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <a href="img/dimploma/prokopenko/diploma-14.png">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/dimploma/prokopenko/diploma-14-desktop.png">
+                                        <source media="(min-width: 768px)" srcset="img/dimploma/prokopenko/diploma-14-tablet.png">
+                                        <img class="diplomas__image modal__image" src="img/dimploma/prokopenko/diploma-14-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                    </picture>
+                                </a>
+                                <div class="modal">
+                                    <button class="modal__close-button" type="button">Закрыть</button>
+                                    <a href="img/dimploma/prokopenko/diploma-14.png">
+                                        <picture>
+                                            <img class="diplomas__original-image modal__original-image" src="img/dimploma/prokopenko/diploma-14-mobile.png" alt="Диплом Прокопенко Елены Алексеевны">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
         <section class="sponsores">
             <h2 class="visually-hidden">Спонсоры</h2>
             <ul class="sponsores-list">
@@ -364,6 +613,7 @@
                 </div>
             </div>
         </section>
+        <div class="overlay"></div>
     </main>
 
     <footer class="footer">
