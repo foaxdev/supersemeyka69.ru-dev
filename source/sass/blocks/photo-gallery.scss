@@ -1,0 +1,9 @@
+.photo-gallery--main {
+    display: none;
+}
+
+@media (min-width: $tablet-width) {
+    .photo-gallery--main {
+        display: block;
+    }
+}

@@ -35,6 +35,7 @@
                         <li class="nav-list__item"><a class="nav-list__link" href="#features">О нас</a></li>
                         <li class="nav-list__item"><a class="nav-list__link" href="#faculties">Направления</a></li>
                         <li class="nav-list__item"><a class="nav-list__link" href="#teachers">Преподаватели</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#photo-gallery">Фото</a></li>
                         <li class="nav-list__item"><a class="nav-list__link" href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
@@ -323,7 +324,7 @@
                         <span class="teachers-list__subject">Подготовка к школе</span>
                         <button class="teachers-list__button-toggle modal-toggle-button modal-toggle-button--teachers-name">Прокопенко Елена Алексеевна</button>
                     </div>
-                    <div class="teachers-list__info-wrap">
+                    <div class="teachers-list__info-wrap teachers-list__info-wrap--hidden">
                         <button class="teachers-list__close-button" type="button">Закрыть</button>
                         <div class="teachers-list__main-info-wrap">
                             <picture>
@@ -578,7 +579,7 @@
                         <span class="teachers-list__subject">Английский язык</span>
                         <button class="teachers-list__button-toggle modal-toggle-button modal-toggle-button--teachers-name">Лютикова Наталья Александровна</button>
                     </div>
-                    <div class="teachers-list__info-wrap">
+                    <div class="teachers-list__info-wrap teachers-list__info-wrap--hidden">
                         <button class="teachers-list__close-button" type="button">Закрыть</button>
                         <div class="teachers-list__main-info-wrap">
                             <picture>
@@ -848,7 +849,7 @@
                         <span class="teachers-list__subject">Весёлая наука</span>
                         <button class="teachers-list__button-toggle modal-toggle-button modal-toggle-button--teachers-name">Загородняя Оксана Александровна</button>
                     </div>
-                    <div class="teachers-list__info-wrap">
+                    <div class="teachers-list__info-wrap teachers-list__info-wrap--hidden">
                         <button class="teachers-list__close-button" type="button">Закрыть</button>
                         <div class="teachers-list__main-info-wrap">
                             <picture>
@@ -874,7 +875,7 @@
                         <span class="teachers-list__subject">Творческая мастерская</span>
                         <button class="teachers-list__button-toggle modal-toggle-button modal-toggle-button--teachers-name">Лыскова Светлана Николаевна</button>
                     </div>
-                    <div class="teachers-list__info-wrap">
+                    <div class="teachers-list__info-wrap teachers-list__info-wrap--hidden">
                         <button class="teachers-list__close-button" type="button">Закрыть</button>
                         <div class="teachers-list__main-info-wrap">
                             <picture>
@@ -969,7 +970,7 @@
                         <span class="teachers-list__subject">Общеразвивающая гимнастика</span>
                         <button class="teachers-list__button-toggle modal-toggle-button modal-toggle-button--teachers-name">Володина Екатерина Александровна</button>
                     </div>
-                    <div class="teachers-list__info-wrap">
+                    <div class="teachers-list__info-wrap teachers-list__info-wrap--hidden">
                         <button class="teachers-list__close-button" type="button">Закрыть</button>
                         <div class="teachers-list__main-info-wrap">
                             <picture>
@@ -1210,7 +1211,7 @@
                         <span class="teachers-list__subject">Кикбоксинг, детский фитнес, fitness training</span>
                         <button class="teachers-list__button-toggle modal-toggle-button modal-toggle-button--teachers-name">Володин Евгений Евгеньевич</button>
                     </div>
-                    <div class="teachers-list__info-wrap">
+                    <div class="teachers-list__info-wrap teachers-list__info-wrap--hidden">
                         <button class="teachers-list__close-button" type="button">Закрыть</button>
                         <div class="teachers-list__main-info-wrap">
                             <picture>
@@ -1411,6 +1412,61 @@
             </ul>
         </section>
 
+        <section class="photo-gallery photo-gallery--main" id="photo-gallery">
+            <h2 class="section-header">Фотогалерея</h2>
+            <ul class="photo-preview-list">
+                <li class="photo-preview-list__item">
+                    <a href="img/photo/01.jpg">
+                        <picture>
+                            <img class="modal__image" src="img/photo/01-tablet.jpg" alt="Фотография с занятия">
+                        </picture>
+                    </a>
+                    <div class="overlay"></div>
+                    <div class="modal">
+                        <button class="modal__close-button" type="button">Закрыть</button>
+                        <a href="img/photo/01.jpg">
+                            <picture>
+                                <img class="photo-preview-list__original-image modal__original-image" src="img/photo/01-mobile.jpg" alt="Фотография с занятия">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+                <li class="photo-preview-list__item">
+                    <a href="img/photo/02.jpg">
+                        <picture>
+                            <img class="modal__image" src="img/photo/02-tablet.jpg" alt="Фотография с занятия">
+                        </picture>
+                    </a>
+                    <div class="overlay"></div>
+                    <div class="modal">
+                        <button class="modal__close-button" type="button">Закрыть</button>
+                        <a href="img/photo/02.jpg">
+                            <picture>
+                                <img class="photo-preview-list__original-image modal__original-image" src="img/photo/02-mobile.jpg" alt="Фотография с занятия">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+                <li class="photo-preview-list__item">
+                    <a href="img/photo/03.jpg">
+                        <picture>
+                            <img class="modal__image" src="img/photo/03-tablet.jpg" alt="Фотография с занятия">
+                        </picture>
+                    </a>
+                    <div class="overlay"></div>
+                    <div class="modal">
+                        <button class="modal__close-button" type="button">Закрыть</button>
+                        <a href="img/photo/03.jpg">
+                            <picture>
+                                <img class="photo-preview-list__original-image modal__original-image" src="img/photo/03-mobile.jpg" alt="Фотография с занятия">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <a class="modal-toggle-button modal-toggle-button--gallery" href="photo-gallery.html">Больше фотографий</a>
+        </section>
+
         <section class="sponsores">
             <h2 class="visually-hidden">Спонсоры</h2>
             <ul class="sponsores-list">
@@ -1469,20 +1525,13 @@
                     </ul>
                 </div>
                 <div class="contacts__map-wrap">
-
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="copyright">
-            <div class="copyright__text">Иконка VK сделана <a class="copyright__link" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> с сайта <a class="copyright__link"> href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-            <div class="copyright__text">Иконка телефона сделана <a class="copyright__link" href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> с сайта <a class="copyright__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-            <div class="copyright__text">Иконка меню сделана <a class="copyright__link" href="https://www.flaticon.com/authors/google" title="Google">Google</a> с сайта <a class="copyright__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-            <div class="copyright__text">Иконка закрытия меню сделана <a class="copyright__link" href="https://www.flaticon.com/authors/twitter" title="Twitter">Twitter</a> с сайта <a class="copyright__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-            <div class="copyright__text">Иконка Instagram сделана <a class="copyright__link" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a class="copyright__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        </div>
+
     </footer>
     <script src="js/script.min.js" defer></script>
 </body>

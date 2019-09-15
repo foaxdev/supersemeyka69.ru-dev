@@ -843,6 +843,28 @@ input[type="file"].visually-hidden {
     opacity: 0.3;
     outline: none; }
 
+.modal__button {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../img/menu-close-white.svg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none; }
+  .modal__button:hover, .modal__button:focus {
+    opacity: 0.6;
+    outline: none; }
+  .modal__button:active {
+    opacity: 0.3;
+    outline: none; }
+
 .modal__image {
   height: auto; }
   .modal__image--hidden {
@@ -873,20 +895,26 @@ input[type="file"].visually-hidden {
   text-align: center; }
   .section-header--main {
     font-size: 30px; }
+  .section-header--photo-gallery {
+    padding-top: 0; }
 
 @media (min-width: 768px) {
   .section-header {
     padding: 50px 30px 0 30px;
     font-size: 32px; }
     .section-header--main {
-      font-size: 36px; } }
+      font-size: 36px; }
+    .section-header--photo-gallery {
+      padding-top: 0; } }
 
 @media (min-width: 1200px) {
   .section-header {
     padding: 90px 50px 0 50px;
     font-size: 42px; }
     .section-header--main {
-      font-size: 46px; } }
+      font-size: 46px; }
+    .section-header--photo-gallery {
+      padding-top: 0; } }
 
 .schedule-list {
   margin: 0;
@@ -1480,7 +1508,16 @@ input[type="file"].visually-hidden {
     .modal-toggle-button--teachers:hover, .modal-toggle-button--teachers:focus {
       background-color: #f1d1ff; }
   .modal-toggle-button--teachers-name {
-    display: none; } }
+    display: none; }
+  .modal-toggle-button--gallery {
+    display: block;
+    margin: 30px 30px 30px auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: #6a296c; }
+    .modal-toggle-button--gallery:hover, .modal-toggle-button--gallery:focus {
+      background-color: #f1d1ff; } }
 
 @media (min-width: 1200px) {
   .modal-toggle-button {
@@ -1491,6 +1528,13 @@ input[type="file"].visually-hidden {
       background-color: #6a296c; }
       .modal-toggle-button--teachers:hover, .modal-toggle-button--teachers:focus {
         background-color: #f1d1ff; }
+    .modal-toggle-button--gallery {
+      display: block;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      padding: 15px 40px 10px 40px;
+      margin: 30px 50px 30px auto; }
   .modal-toggle-button--faculty {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1821,3 +1865,45 @@ input[type="file"].visually-hidden {
     border-radius: 0; }
   .diplomas__original-image {
     max-height: 759px; } }
+
+.photo-preview-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 40px 30px; }
+
+.photo-preview-list__item {
+  margin-bottom: 20px; }
+
+.photo-preview-list__original-image {
+  height: 760px;
+  width: auto; }
+
+@media (min-width: 1200px) {
+  .photo-preview-list {
+    width: 1200px;
+    padding: 50px;
+    margin: 0 auto; }
+  .photo-preview-list__item:hover, .photo-preview-list__item:focus, .photo-preview-list__item:active {
+    -webkit-box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.4);
+            box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    outline: none; } }
+
+.photo-gallery--main {
+  display: none; }
+
+@media (min-width: 768px) {
+  .photo-gallery--main {
+    display: block; } }

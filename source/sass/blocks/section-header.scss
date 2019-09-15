@@ -14,6 +14,10 @@
     &--main {
         font-size: 30px;
     }
+
+    &--photo-gallery {
+        padding-top: 0;
+    }
 }
 
 @media (min-width: $tablet-width) {
@@ -24,6 +28,10 @@
 
         &--main {
             font-size: 36px;
+        }
+
+        &--photo-gallery {
+            padding-top: 0;
         }
     }
 }
@@ -36,6 +44,10 @@
 
         &--main {
             font-size: 46px;
+        }
+
+        &--photo-gallery {
+            padding-top: 0;
         }
     }
 }

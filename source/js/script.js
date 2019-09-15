@@ -78,6 +78,13 @@ function initializeTeachersInfo(elsTeachersToggleButtons) {
     }
 }
 
+function checkIfPreviousImageAvailable(elButtonPrevious) {
+    if (elButtonPrevious.parentElement.parentElement.previousElementSibling === null)
+        elButtonPrevious.classList.add("modal__button--disabled");
+    else if (!elButtonPrevious.parentElement.parentElement.previousElementSibling.querySelector(".modal__original-image"))
+        elButtonPrevious.classList.add("modal__button--disabled");
+}
+
 let elButtonToggle = document.querySelector(".header__button-toggle");
 let elMenuWrap = document.querySelector(".header__menu-wrap");
 let elMainTagline = document.querySelector(".header__tagline");
@@ -102,11 +109,6 @@ window.addEventListener("scroll", function () {
     if (elHeader)
         checkIfPageIsOnTheTop(elHeader);
 });
-
-let elsTeachersInfoWrap = document.querySelectorAll(".teachers-list__info-wrap");
-if (elsTeachersInfoWrap)
-    for (let i = 0; i < elsTeachersInfoWrap.length; i++)
-        elsTeachersInfoWrap[i].classList.add("teachers-list__info-wrap--hidden");
 
 let elsTeachersToggleButtons = document.querySelectorAll(".teachers-list__button-toggle");
 if (elsTeachersToggleButtons) {
