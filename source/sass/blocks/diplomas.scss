@@ -19,6 +19,12 @@
 @media (min-width: $desktop-width) {
     .diplomas {
         margin-top: 40px;
+
+        &--small {
+            .diplomas__wrap > a {
+                width: 20%;
+            }
+        }
     }
 
     .diplomas__wrap {
@@ -35,5 +41,9 @@
 
     .diplomas__image {
         border-radius: 0;
+    }
+
+    .diplomas__original-image {
+        max-height: 759px;
     }
 }

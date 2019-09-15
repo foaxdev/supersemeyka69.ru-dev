@@ -4,6 +4,10 @@
     flex-direction: column;
 }
 
+.teachers-list__item {
+    margin-bottom: 10px;
+}
+
 .teachers-list__image-preview {
     display: none;
 }
@@ -40,11 +44,15 @@
 
 @media (min-width: $tablet-width) {
     .teachers-list {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
         padding: 0 30px 30px 30px;
     }
 
     .teachers-list__item {
         width: 45%;
+        margin-bottom: 20px;
     }
 
     .teachers-list__image-preview {
@@ -68,7 +76,7 @@
     }
 
     .teachers-list__item {
-        width: 33%;
+        width: auto;
     }
 
     .teachers-list__image {

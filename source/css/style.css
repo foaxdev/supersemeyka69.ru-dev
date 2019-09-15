@@ -831,7 +831,7 @@ input[type="file"].visually-hidden {
   width: 60px;
   height: 60px;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url("../img/menu-close.svg");
+  background-image: url("../img/menu-close-white.svg");
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center;
@@ -958,7 +958,7 @@ input[type="file"].visually-hidden {
   width: 100%;
   height: 100%;
   background-color: #000000;
-  opacity: 0.7; }
+  opacity: 0.8; }
   .overlay--show {
     display: block; }
 
@@ -1626,6 +1626,9 @@ input[type="file"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.teachers-list__item {
+  margin-bottom: 10px; }
+
 .teachers-list__image-preview {
   display: none; }
 
@@ -1659,9 +1662,18 @@ input[type="file"].visually-hidden {
 
 @media (min-width: 768px) {
   .teachers-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0 30px 30px 30px; }
   .teachers-list__item {
-    width: 45%; }
+    width: 45%;
+    margin-bottom: 20px; }
   .teachers-list__image-preview {
     display: block; }
   .teachers-list__image {
@@ -1675,7 +1687,7 @@ input[type="file"].visually-hidden {
     margin: 0 auto;
     padding: 0 50px 50px 50px; }
   .teachers-list__item {
-    width: 33%; }
+    width: auto; }
   .teachers-list__image {
     display: block;
     width: 760px; }
@@ -1791,6 +1803,8 @@ input[type="file"].visually-hidden {
 @media (min-width: 1200px) {
   .diplomas {
     margin-top: 40px; }
+    .diplomas--small .diplomas__wrap > a {
+      width: 20%; }
   .diplomas__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1804,4 +1818,6 @@ input[type="file"].visually-hidden {
       margin-right: 15px;
       margin-bottom: 15px; }
   .diplomas__image {
-    border-radius: 0; } }
+    border-radius: 0; }
+  .diplomas__original-image {
+    max-height: 759px; } }

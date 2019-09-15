@@ -7,7 +7,7 @@ function initializeMainMenu(elButtonToggle, elMenuWrap, elMainTagline) {
         elButtonToggle.classList.toggle("header__button-toggle--opened");
         elMenuWrap.classList.toggle("header__menu-wrap--hidden");
     });
-};
+}
 
 function initializeScheduleLogic(elsButtonToggleSchedule) {
     for (let i = 0; i < elsButtonToggleSchedule.length; i++) {
@@ -34,14 +34,14 @@ function initializeScheduleLogic(elsButtonToggleSchedule) {
 
 function initializeScheduleImagesLogic(elsSchedulePreviews) {
     for (let i = 0; i < elsSchedulePreviews.length; i++) {
-        let elScheduleFullImage = elsSchedulePreviews[i].parentElement.parentElement.nextElementSibling;
+        let elScheduleFullImage = elsSchedulePreviews[i].parentElement.parentElement.nextElementSibling.nextElementSibling;
 
         if (elScheduleFullImage && elsSchedulePreviews[i].parentElement) {
             elsSchedulePreviews[i].parentElement.addEventListener("click", function (evt) {
                 evt.preventDefault();
                 if (document.body.clientWidth >= 1200) {
                     elScheduleFullImage.classList.toggle("modal--show");
-                    let elOverlay = document.querySelector(".overlay");
+                    let elOverlay = elScheduleFullImage.previousElementSibling;
                     if (elOverlay)
                         elOverlay.classList.add("overlay--show");
                 }
@@ -54,7 +54,7 @@ function initializeCloseModalWindowLogic(elsScheduleButtonCloseModal) {
     for (let i = 0; i < elsScheduleButtonCloseModal.length; i++) {
         elsScheduleButtonCloseModal[i].addEventListener("click", function () {
             let elModalWindow = elsScheduleButtonCloseModal[i].parentElement;
-            let elOverlay = document.querySelector(".overlay");
+            let elOverlay = elModalWindow.previousElementSibling;
             if (elModalWindow && elOverlay) {
                 elModalWindow.classList.toggle("modal--show");
                 elOverlay.classList.toggle("overlay--show");
@@ -112,11 +112,15 @@ let elsTeachersToggleButtons = document.querySelectorAll(".teachers-list__button
 if (elsTeachersToggleButtons) {
     initializeTeachersInfo(elsTeachersToggleButtons);
 
-    let elTeacherInfoWrapCloseButton = document.querySelector(".teachers-list__close-button");
-    let elTeachersWrap = elTeacherInfoWrapCloseButton.parentElement;
-    if (elTeacherInfoWrapCloseButton && elTeachersWrap) {
-        elTeacherInfoWrapCloseButton.addEventListener("click", function () {
-            elTeachersWrap.classList.toggle("teachers-list__info-wrap--hidden");
-        });
+    let elsTeacherInfoWrapCloseButton = document.querySelectorAll(".teachers-list__close-button");
+    if (elsTeacherInfoWrapCloseButton) {
+        for (let i = 0; i < elsTeacherInfoWrapCloseButton.length; i++) {
+            let elTeachersWrap = elsTeacherInfoWrapCloseButton[i].parentElement;
+            if (elTeachersWrap) {
+                elsTeacherInfoWrapCloseButton[i].addEventListener("click", function () {
+                    elTeachersWrap.classList.add("teachers-list__info-wrap--hidden");
+                });
+            }
+        }
     }
 }
