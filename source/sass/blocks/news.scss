@@ -1,0 +1,16 @@
+.news {
+    display: none;
+}
+
+@media (min-width: $tablet-width) {
+    .news {
+        display: block;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .news {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}

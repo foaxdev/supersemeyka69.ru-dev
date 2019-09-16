@@ -2192,3 +2192,15 @@ input[type="file"].visually-hidden {
 @media (min-width: 768px) {
   .video {
     display: block; } }
+
+.news {
+  display: none; }
+
+@media (min-width: 768px) {
+  .news {
+    display: block; } }
+
+@media (min-width: 1200px) {
+  .news {
+    width: 1200px;
+    margin: 0 auto; } }
