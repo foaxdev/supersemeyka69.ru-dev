@@ -27,6 +27,12 @@
     &:active {
         opacity: 0.3;
     }
+
+    &--news,
+    &--video,
+    &--photo {
+        display: none;
+    }
 }
 
 @media (min-width: $tablet-width) {
@@ -39,5 +45,13 @@
 
     .nav-list__item:not(:last-child) {
         margin-right: 30px;
+    }
+
+    .nav-list__link {
+        &--news,
+        &--video,
+        &--photo {
+            display: block;
+        }
     }
 }
