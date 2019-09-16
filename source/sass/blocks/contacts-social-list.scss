@@ -1,0 +1,40 @@
+.contacts-social-list {
+    @include list-reset();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+    margin: 0 auto 25px auto;
+}
+
+.contacts-social-list__item {
+    &:hover,
+    &:focus {
+        opacity: 0.6;
+        outline: none;
+    }
+
+    &:active {
+        opacity: 0.3;
+        outline: none;
+    }
+}
+
+.contacts-social-list__svg {
+    fill: $violet;
+}
+
+.contacts-social-list__link {
+    @include hide-text();
+}
+
+@media (min-width: $tablet-width) {
+    .contacts-social-list {
+        justify-content: flex-end;
+        margin: 0 0 25px auto;
+    }
+
+    .contacts-social-list__item:not(:last-child) {
+        margin-right: 20px;
+    }
+}

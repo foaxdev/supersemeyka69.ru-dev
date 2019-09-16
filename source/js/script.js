@@ -78,6 +78,40 @@ function initializeTeachersInfo(elsTeachersToggleButtons) {
     }
 }
 
+function initializeInteractiveMap(elMap, elInteractiveMap) {
+    ymaps.ready(init);
+
+    function init() {
+
+        elMap.classList.toggle("map__wrap--hide");
+        elInteractiveMap.classList.toggle("map__interactive-map--show");
+
+        let map = new ymaps.Map("map", {
+                center: [56.815059, 35.890836],
+                zoom: 16,
+                controls: []
+            }, {
+                searchControlProvider: "yandex#search"
+            }),
+
+            MyIconContentLayout = new ymaps.templateLayoutFactory.createClass(
+                "<div style='color: #FFFFFF; font-weight: bold;'>$[properties.iconContent]</div>"
+            ),
+
+            myPlacemark = new ymaps.Placemark([56.815150, 35.888600], {
+                hintContent: "",
+                balloonContent: ""
+            }, {
+                iconLayout: "default#image",
+                iconImageHref: "img/map-marker.png",
+                iconImageSize: [54, 54],
+                iconImageOffset: [-27, -27]
+            });
+
+        map.geoObjects.add(myPlacemark);
+    }
+}
+
 let elButtonToggle = document.querySelector(".header__button-toggle");
 let elMenuWrap = document.querySelector(".header__menu-wrap");
 let elMainTagline = document.querySelector(".header__tagline");
@@ -121,4 +155,11 @@ if (elsTeachersToggleButtons) {
             }
         }
     }
+}
+
+let elMap = document.querySelector(".map__wrap");
+let elInteractiveMap = document.querySelector(".map__interactive-map");
+
+if (elMap && elInteractiveMap) {
+    initializeInteractiveMap(elMap, elInteractiveMap);
 }
