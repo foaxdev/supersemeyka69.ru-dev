@@ -1885,9 +1885,23 @@ input[type="file"].visually-hidden {
 
 .photo-preview-list__item {
   margin-bottom: 20px; }
+  .photo-preview-list__item > a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 340px; }
+
+.photo-preview-list__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 6px; }
 
 .photo-preview-list__original-image {
-  height: 760px;
+  max-height: 760px;
   width: auto; }
 
 @media (min-width: 1200px) {
@@ -1895,7 +1909,7 @@ input[type="file"].visually-hidden {
     width: 1200px;
     padding: 50px;
     margin: 0 auto; }
-  .photo-preview-list__item:hover, .photo-preview-list__item:focus, .photo-preview-list__item:active {
+  .photo-preview-list__image:hover, .photo-preview-list__image:focus, .photo-preview-list__image:active {
     -webkit-box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.4);
             box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.4);
     border-radius: 6px;

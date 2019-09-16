@@ -10,10 +10,22 @@
 
 .photo-preview-list__item {
     margin-bottom: 20px;
+
+    & > a {
+        display: flex;
+        justify-content: center;
+        width: 340px;
+    }
+}
+
+.photo-preview-list__image {
+    display: flex;
+
+    border-radius: 6px;
 }
 
 .photo-preview-list__original-image {
-    height: 760px;
+    max-height: 760px;
     width: auto;
 }
 
@@ -24,7 +36,7 @@
         margin: 0 auto;
     }
 
-    .photo-preview-list__item {
+    .photo-preview-list__image {
         &:hover,
         &:focus,
         &:active {

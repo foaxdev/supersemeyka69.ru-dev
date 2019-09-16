@@ -78,13 +78,6 @@ function initializeTeachersInfo(elsTeachersToggleButtons) {
     }
 }
 
-function checkIfPreviousImageAvailable(elButtonPrevious) {
-    if (elButtonPrevious.parentElement.parentElement.previousElementSibling === null)
-        elButtonPrevious.classList.add("modal__button--disabled");
-    else if (!elButtonPrevious.parentElement.parentElement.previousElementSibling.querySelector(".modal__original-image"))
-        elButtonPrevious.classList.add("modal__button--disabled");
-}
-
 let elButtonToggle = document.querySelector(".header__button-toggle");
 let elMenuWrap = document.querySelector(".header__menu-wrap");
 let elMainTagline = document.querySelector(".header__tagline");
@@ -99,6 +92,9 @@ if (elsButtonToggleSchedule)
 let elsSchedulePreviews = document.querySelectorAll(".modal__image");
 if (elsSchedulePreviews)
     initializeScheduleImagesLogic(elsSchedulePreviews);
+let elsPhotoGalleryPreviews = document.querySelectorAll(".photo-preview-list__image");
+if (elsPhotoGalleryPreviews)
+    initializeScheduleImagesLogic(elsPhotoGalleryPreviews);
 
 let elsScheduleButtonCloseModal = document.querySelectorAll(".modal__close-button");
 if (elsScheduleButtonCloseModal)
