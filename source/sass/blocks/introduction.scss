@@ -27,7 +27,7 @@
 }
 
 .introduction__video {
-    display: block;
+    display: none;
     width: 100%;
     margin: 0;
 
@@ -61,6 +61,10 @@
 @media (min-width: $tablet-width) {
     .introduction {
         margin-top: 110px;
+    }
+
+    .introduction__video {
+        display: block;
     }
 
     .introduction__image {

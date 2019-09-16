@@ -754,7 +754,7 @@ input[type="file"].visually-hidden {
   border-bottom: 3px solid #6a296c; }
 
 .introduction__video {
-  display: block;
+  display: none;
   width: 100%;
   margin: 0;
   -o-object-fit: cover;
@@ -782,6 +782,8 @@ input[type="file"].visually-hidden {
 @media (min-width: 768px) {
   .introduction {
     margin-top: 110px; }
+  .introduction__video {
+    display: block; }
   .introduction__image {
     display: block;
     margin: 0 auto;
