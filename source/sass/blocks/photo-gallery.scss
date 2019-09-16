@@ -7,3 +7,10 @@
         display: block;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .photo-gallery--main {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}

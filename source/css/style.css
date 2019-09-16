@@ -1536,7 +1536,7 @@ input[type="file"].visually-hidden {
       width: -moz-fit-content;
       width: fit-content;
       padding: 15px 40px 10px 40px;
-      margin: 30px 50px 30px auto; }
+      margin: 30px 0 30px auto; }
   .modal-toggle-button--faculty {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1970,13 +1970,35 @@ input[type="file"].visually-hidden {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 340px; }
+    width: 320px; }
+
+.photo-preview-list__item--video > a {
+  width: 250px; }
 
 .photo-preview-list__image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 6px; }
+  .photo-preview-list__image--video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 250px;
+    height: 150px;
+    padding: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    background-color: #6a296c;
+    cursor: pointer; }
 
 .photo-preview-list__original-image {
   max-height: 760px;
@@ -1987,6 +2009,8 @@ input[type="file"].visually-hidden {
     width: 1200px;
     padding: 50px;
     margin: 0 auto; }
+  .photo-preview-list__item > a {
+    width: 340px; }
   .photo-preview-list__image:hover, .photo-preview-list__image:focus, .photo-preview-list__image:active {
     -webkit-box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.4);
             box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.4);
@@ -1999,6 +2023,11 @@ input[type="file"].visually-hidden {
 @media (min-width: 768px) {
   .photo-gallery--main {
     display: block; } }
+
+@media (min-width: 1200px) {
+  .photo-gallery--main {
+    width: 1200px;
+    margin: 0 auto; } }
 
 .map {
   width: 100%; }
@@ -2156,3 +2185,10 @@ input[type="file"].visually-hidden {
   .contacts-list__link,
   .contacts-list__address {
     font-size: 26px; } }
+
+.video {
+  display: none; }
+
+@media (min-width: 768px) {
+  .video {
+    display: block; } }

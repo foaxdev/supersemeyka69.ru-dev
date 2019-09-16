@@ -1,0 +1,9 @@
+.video {
+    display: none;
+}
+
+@media (min-width: $tablet-width) {
+    .video {
+        display: block;
+    }
+}

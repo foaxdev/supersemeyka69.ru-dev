@@ -14,7 +14,13 @@
     & > a {
         display: flex;
         justify-content: center;
-        width: 340px;
+        width: 320px;
+    }
+}
+
+.photo-preview-list__item--video {
+    & > a {
+        width: 250px;
     }
 }
 
@@ -22,6 +28,24 @@
     display: flex;
 
     border-radius: 6px;
+
+    &--video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 150px;
+        padding: 20px;
+
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $white;
+        text-align: center;
+
+        background-color: $violet;
+
+        cursor: pointer;
+    }
 }
 
 .photo-preview-list__original-image {
@@ -34,6 +58,12 @@
         width: 1200px;
         padding: 50px;
         margin: 0 auto;
+    }
+
+    .photo-preview-list__item {
+        & > a {
+            width: 340px;
+        }
     }
 
     .photo-preview-list__image {
