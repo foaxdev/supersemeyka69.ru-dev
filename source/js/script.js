@@ -14,17 +14,17 @@ function initializeScheduleLogic(elsButtonToggleSchedule) {
         let elModalImage = elsButtonToggleSchedule[i].nextElementSibling;
         if (elModalImage) {
             if (elModalImage.classList.contains("modal")) {
-                elModalImage.classList.add("modal__image--hidden");
+                elModalImage.classList.add("modal-image--hidden");
                 elsButtonToggleSchedule[i].addEventListener("click", function () {
-                    elModalImage.classList.toggle("modal__image--hidden");
+                    elModalImage.classList.toggle("modal-image--hidden");
                 });
             }
             else {
-                let elsModalImage = elsButtonToggleSchedule[i].nextElementSibling.querySelectorAll(".modal__image");
+                let elsModalImage = elsButtonToggleSchedule[i].nextElementSibling.querySelectorAll(".modal-image");
                 for (let j = 0; j < elsModalImage.length; j++) {
-                    elsModalImage[j].classList.add("modal__image--hidden");
+                    elsModalImage[j].classList.add("modal-image--hidden");
                     elsButtonToggleSchedule[i].addEventListener("click", function () {
-                        elsModalImage[j].classList.toggle("modal__image--hidden");
+                        elsModalImage[j].classList.toggle("modal-image--hidden");
                     });
                 }
             }
@@ -123,12 +123,9 @@ let elsButtonToggleSchedule = document.querySelectorAll(".modal-toggle-button");
 if (elsButtonToggleSchedule)
     initializeScheduleLogic(elsButtonToggleSchedule);
 
-let elsSchedulePreviews = document.querySelectorAll(".modal__image");
+let elsSchedulePreviews = document.querySelectorAll(".modal-image");
 if (elsSchedulePreviews)
     initializeScheduleImagesLogic(elsSchedulePreviews);
-let elsPhotoGalleryPreviews = document.querySelectorAll(".photo-preview-list__image");
-if (elsPhotoGalleryPreviews)
-    initializeScheduleImagesLogic(elsPhotoGalleryPreviews);
 
 let elsScheduleButtonCloseModal = document.querySelectorAll(".modal__close-button");
 if (elsScheduleButtonCloseModal)

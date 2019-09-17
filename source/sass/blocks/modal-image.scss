@@ -1,0 +1,20 @@
+.modal-image {
+    height: auto;
+
+    &--hidden {
+        display: none;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .modal-image {
+        display: flex;
+        width: 340px;
+
+        border-radius: 6px;
+
+        &--hidden {
+            display: flex;
+        }
+    }
+}
