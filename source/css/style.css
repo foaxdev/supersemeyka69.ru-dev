@@ -414,7 +414,7 @@ input[type="file"].visually-hidden {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   font-size: 30px;
   font-weight: 700;
@@ -601,7 +601,7 @@ input[type="file"].visually-hidden {
   display: block;
   padding: 10px 0;
   width: 100%;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   font-style: normal;
   line-height: 1.2;
@@ -746,7 +746,7 @@ input[type="file"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 100px; }
+  margin-top: 80px; }
   .introduction--english, .introduction--pre-school, .introduction--creative-studio, .introduction--science, .introduction--acting {
     background-image: url("../img/bg/school.png"); }
   .introduction--gymnastics, .introduction--kickboxing, .introduction--kids-fitness, .introduction--fitness-training {
@@ -801,7 +801,7 @@ input[type="file"].visually-hidden {
 
 @media (min-width: 1200px) {
   .introduction {
-    margin-top: 206px; }
+    margin-top: 198px; }
   .introduction__wrap {
     width: 1100px;
     margin: 30px auto 40px auto; } }
@@ -889,7 +889,7 @@ input[type="file"].visually-hidden {
     outline: none; }
 
 .section-header {
-  padding: 50px 20px 0 20px;
+  padding: 90px 20px 0 20px;
   margin: 0 0 30px 0;
   font-size: 26px;
   font-weight: 700;
@@ -906,7 +906,7 @@ input[type="file"].visually-hidden {
 
 @media (min-width: 768px) {
   .section-header {
-    padding: 50px 30px 0 30px;
+    padding: 100px 30px 0 30px;
     font-size: 32px; }
     .section-header--main {
       font-size: 36px; }
@@ -915,7 +915,7 @@ input[type="file"].visually-hidden {
 
 @media (min-width: 1200px) {
   .section-header {
-    padding: 90px 50px 0 50px;
+    padding: 140px 50px 20px 50px;
     font-size: 42px; }
     .section-header--main {
       font-size: 46px; }
@@ -1377,6 +1377,9 @@ input[type="file"].visually-hidden {
   .duration__text {
     font-size: 22px; } }
 
+.quantity {
+  background-image: url("../img/bg/school.png"); }
+
 .quantity__text-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1451,6 +1454,9 @@ input[type="file"].visually-hidden {
     padding: 30px 50px 70px 50px; }
   .price__text {
     font-size: 22px; } }
+
+.materials {
+  background-image: url("../img/bg/school.png"); }
 
 .materials__note {
   display: -webkit-box;
@@ -1703,6 +1709,9 @@ input[type="file"].visually-hidden {
   .footer__link--email {
     margin-bottom: 30px;
     font-size: 18px; } }
+
+.cloths {
+  background-image: url("../img/bg/school.png"); }
 
 .cloths__text-wrap {
   display: -webkit-box;
@@ -2021,6 +2030,9 @@ input[type="file"].visually-hidden {
     border-radius: 6px;
     outline: none; } }
 
+.photo-gallery {
+  background-image: url("../img/bg/school.png"); }
+
 .photo-gallery--main {
   display: none; }
 
@@ -2059,6 +2071,9 @@ input[type="file"].visually-hidden {
   .map__image {
     width: 100%;
     height: 515px; } }
+
+.contacts {
+  background-image: url("../img/bg/school.png"); }
 
 .contacts__social-wrap {
   width: 100%; }
@@ -2191,14 +2206,16 @@ input[type="file"].visually-hidden {
     font-size: 26px; } }
 
 .video {
-  display: none; }
+  display: none;
+  background-image: url("../img/bg/school.png"); }
 
 @media (min-width: 768px) {
   .video {
     display: block; } }
 
 .news {
-  display: none; }
+  display: none;
+  background-image: url("../img/bg/school.png"); }
 
 @media (min-width: 768px) {
   .news {
@@ -2208,3 +2225,12 @@ input[type="file"].visually-hidden {
   .news {
     width: 1200px;
     margin: 0 auto; } }
+
+.schedule {
+  background-image: url("../img/bg/school.png"); }
+
+.faculties {
+  background-image: url("../img/bg/school.png"); }
+
+.teachers {
+  background-image: url("../img/bg/school.png"); }

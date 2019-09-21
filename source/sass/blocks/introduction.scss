@@ -1,7 +1,7 @@
 .introduction {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 80px;
 
     &--english,
     &--pre-school,
@@ -89,7 +89,7 @@
 
 @media (min-width: $desktop-width) {
     .introduction {
-        margin-top: 206px;
+        margin-top: 198px;
     }
 
     .introduction__wrap {

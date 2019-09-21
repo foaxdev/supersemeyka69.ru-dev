@@ -160,3 +160,13 @@ let elInteractiveMap = document.querySelector(".map__interactive-map");
 if (elMap && elInteractiveMap) {
     initializeInteractiveMap(elMap, elInteractiveMap);
 }
+
+let elsNavLinks = document.querySelectorAll(".nav-list__link");
+if (elsNavLinks) {
+    for (let i = 0; i < elsNavLinks.length; i++) {
+        elsNavLinks[i].addEventListener("click", function () {
+            elButtonToggle.classList.remove("header__button-toggle--opened");
+            elMenuWrap.classList.add("header__menu-wrap--hidden");
+        });
+    }
+}
