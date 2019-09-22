@@ -17,7 +17,7 @@ $required_fields = ["name", "tel", "faculty", "email"];
 $errors = [];
 
 function getPostValue($name) {
-    return $_POST[$name] ?? "";
+    return $_POST[$name] ? $_POST[$name] : "";
 }
 
 function isFacultySelected($faculty) {
@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     foreach ($_POST as $key => $value) {
-        if ($key == "email") {
+        if ($key == "email" && !$errors["email"]) {
             if(!filter_var($value, FILTER_VALIDATE_EMAIL)) {
                 $errors[$key] = "Email должен быть корректным";
             }
@@ -51,15 +51,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user_phone = $_POST["tel"];
         $user_email = $_POST["email"];
         $text = $_POST["text"];
+        $text_for_user = "Ваша заявка принята. Спасибо за обращение!";
 
         $user_text = 'Сообщение от пользователя: ' . $text;
         if (sizeof($text) == 0) {
             $user_text = '';
         }
-        $text_message = wordwrap('Имя: ' . $user_name . '\n' . 'Желаемое направление: ' . $faculty . '\n' . 'Телефон: ' . $user_phone . '\n' . 'Email: ' . $user_email . '\n' . $user_text, 70);
+        $text_message = wordwrap("Имя: " . $user_name . "\r\n" . "Желаемое направление: " . $faculty . "\r\n" . "Телефон: " . $user_phone . "\r\n" . "Email: " . $user_email . "\r\n" . $user_text, 70);
 
 
         mail("irinamist4@gmail.com", "Заявка на запись", $text_message);
+        mail($user_email, "Суперсемейка", $text_for_user);
         header("Location: /");
     }
 }

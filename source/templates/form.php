@@ -58,16 +58,15 @@
         </header>
 
         <main>
-            <h1 class="section-header section-header--main">Форма заявки</h1>
-
             <section class="form-section">
+                <h1 class="section-header section-header--main">Форма заявки</h1>
                 <form class="form" action="request.php" method="post" autocomplete="off">
                     <div class="form__row">
                         <?php $classname = isset($errors["name"]) ? "form__input--error" : "";?>
                         <label class="form__label" for="name">Имя <sup>*</sup></label>
 
                         <input class="form__input <?=$classname; ?>" type="text" name="name" id="name" value="<?=getPostValue('name'); ?>" placeholder="Введите имя">
-                        <p class="form__message"><?=$errors["name"] ?? ""; ?></p>
+                        <p class="form__message"><?=$errors["name"] ? $errors["name"]  : ""; ?></p>
                     </div>
 
                     <div class="form__row">
@@ -84,7 +83,7 @@
                                 }
                             ?>
                         </select>
-                        <p class="form__message"><?=$errors["faculty"] ?? ""; ?></p>
+                        <p class="form__message"><?=$errors["faculty"] ? $errors["faculty"] : ""; ?></p>
                     </div>
 
                     <div class="form__row">
@@ -92,7 +91,7 @@
                         <label class="form__label" for="tel">Телефон <sup>*</sup></label>
 
                         <input class="form__input form__input--date <?=$classname; ?>" type="tel" name="tel" id="tel" value="<?=getPostValue('tel'); ?>" placeholder="Введите телефон">
-                        <p class="form__message"><?=$errors["tel"] ?? ""; ?></p>
+                        <p class="form__message"><?=$errors["tel"] ? $errors["tel"] : ""; ?></p>
                     </div>
 
                     <div class="form__row">
@@ -100,7 +99,7 @@
                         <label class="form__label" for="email">Email <sup>*</sup></label>
 
                         <input class="form__input form__input--date <?=$classname; ?>" type="email" name="email" id="email" value="<?=getPostValue('email'); ?>" placeholder="Введите email">
-                        <p class="form__message"><?=$errors["email"] ?? ""; ?></p>
+                        <p class="form__message"><?=$errors["email"] ? $errors["email"] : ""; ?></p>
                     </div>
 
                     <div class="form__row">
