@@ -889,7 +889,7 @@ input[type="file"].visually-hidden {
     outline: none; }
 
 .section-header {
-  padding: 90px 20px 0 20px;
+  padding: 130px 20px 0 20px;
   margin: 0 0 30px 0;
   font-size: 26px;
   font-weight: 700;
@@ -906,7 +906,7 @@ input[type="file"].visually-hidden {
 
 @media (min-width: 768px) {
   .section-header {
-    padding: 100px 30px 0 30px;
+    padding: 140px 30px 0 30px;
     font-size: 32px; }
     .section-header--main {
       font-size: 36px; }
@@ -915,7 +915,7 @@ input[type="file"].visually-hidden {
 
 @media (min-width: 1200px) {
   .section-header {
-    padding: 140px 50px 20px 50px;
+    padding: 160px 50px 20px 50px;
     font-size: 42px; }
     .section-header--main {
       font-size: 46px; }
@@ -2236,15 +2236,17 @@ input[type="file"].visually-hidden {
   background-image: url("../img/bg/school.png"); }
 
 .form {
-  max-width: 445px; }
+  width: 100%; }
 
 .form__row {
+  width: 100%;
   margin-bottom: 25px; }
 
 .form__label {
   display: inline-block;
   margin-bottom: 7px;
-  font-size: 13px; }
+  font-size: 20px;
+  color: #6a296c; }
 
 .form__input,
 .form__textarea {
@@ -2278,3 +2280,43 @@ input[type="file"].visually-hidden {
   margin-top: 2px;
   font-size: 11px;
   color: #f84646; }
+
+.form__button {
+  width: 100%;
+  padding: 15px 30px 10px 30px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #6a296c;
+  border: none;
+  cursor: pointer; }
+  .form__button:hover, .form__button:focus {
+    opacity: 0.6;
+    outline: none; }
+  .form__button:active {
+    opacity: 0.3; }
+
+@media (min-width: 1200px) {
+  .form {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 50px 60px 50px; }
+  .form__label {
+    font-size: 24px; } }
+
+.form-section {
+  padding: 40px 20px 40px 20px;
+  background-image: url("../img/bg/school.png"); }
+
+@media (min-width: 768px) {
+  .form-section {
+    padding: 50px 30px 60px 30px; } }
+
+@media (min-width: 1200px) {
+  .form-section {
+    padding: 0; } }

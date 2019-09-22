@@ -1,8 +1,0 @@
-{
-    "name": "foaxdev/supersemeyka69",
-    "type": "project",
-    "require": {
-        "wixel/gump": "^1.5.7",
-        "swiftmailer/swiftmailer": "^6.2.1"
-    }
-}
