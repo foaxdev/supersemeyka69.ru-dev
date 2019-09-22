@@ -2234,3 +2234,47 @@ input[type="file"].visually-hidden {
 
 .teachers {
   background-image: url("../img/bg/school.png"); }
+
+.form {
+  max-width: 445px; }
+
+.form__row {
+  margin-bottom: 25px; }
+
+.form__label {
+  display: inline-block;
+  margin-bottom: 7px;
+  font-size: 13px; }
+
+.form__input,
+.form__textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #d7dbe8;
+  border-radius: 3px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+.form__textarea {
+  height: 100px;
+  resize: none; }
+
+.form__input--error {
+  background: transparent url("../img/icon-error.png") no-repeat right 10px top 50%;
+  border-color: #f84646; }
+
+.form__input--select {
+  background: #ffffff url("../img/dropdown.svg") right 20px top 50% no-repeat; }
+
+.form__row--controls {
+  margin-top: 60px;
+  margin-bottom: 0; }
+
+.form__message {
+  margin: 0;
+  margin-top: 2px;
+  font-size: 11px;
+  color: #f84646; }
