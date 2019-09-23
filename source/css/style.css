@@ -747,7 +747,7 @@ input[type="file"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 80px; }
-  .introduction--english, .introduction--pre-school, .introduction--creative-studio, .introduction--science, .introduction--acting {
+  .introduction--english, .introduction--pre-school, .introduction--creative-studio, .introduction--science, .introduction--acting, .introduction--karapuziki {
     background-image: url("../img/bg/school.png"); }
   .introduction--gymnastics, .introduction--kickboxing, .introduction--kids-fitness, .introduction--fitness-training {
     background-image: url("../img/bg/sport.png"); }
@@ -1294,6 +1294,9 @@ input[type="file"].visually-hidden {
 .introduction-list--acting li::before {
   background-image: url("../img/list-icons/acting.png"); }
 
+.introduction-list--karapuziki li::before {
+  background-image: url("../img/list-icons/baby.png"); }
+
 .introduction__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1501,6 +1504,9 @@ input[type="file"].visually-hidden {
     opacity: 0.5; }
   .modal-toggle-button--teachers {
     display: none; }
+  .modal-toggle-button--gallery:hover, .modal-toggle-button--gallery:focus {
+    color: #6a296c;
+    background-color: #f1d1ff; }
   .modal-toggle-button--teachers-name {
     background-color: #ff9100; }
     .modal-toggle-button--teachers-name:hover, .modal-toggle-button--teachers-name:focus {
@@ -1527,9 +1533,7 @@ input[type="file"].visually-hidden {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    background-color: #6a296c; }
-    .modal-toggle-button--gallery:hover, .modal-toggle-button--gallery:focus {
-      background-color: #f1d1ff; } }
+    background-color: #6a296c; } }
 
 @media (min-width: 1200px) {
   .modal-toggle-button {

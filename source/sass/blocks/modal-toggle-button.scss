@@ -30,6 +30,14 @@
         display: none;
     }
 
+    &--gallery {
+        &:hover,
+        &:focus {
+            color: $violet;
+            background-color: $light-violet;
+        }
+    }
+
     &--teachers-name {
         background-color: $orange;
 
@@ -76,11 +84,6 @@
             width: fit-content;
 
             background-color: $violet;
-
-            &:hover,
-            &:focus {
-                background-color: $light-violet;
-            }
         }
     }
 }

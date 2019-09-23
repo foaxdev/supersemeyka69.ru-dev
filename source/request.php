@@ -52,6 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user_email = $_POST["email"];
         $text = $_POST["text"];
         $text_for_user = "Ваша заявка принята. Спасибо за обращение!";
+        $headers = "From: webmaster@example.com";
 
         $user_text = 'Сообщение от пользователя: ' . $text;
         if (sizeof($text) == 0) {
@@ -60,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $text_message = wordwrap("Имя: " . $user_name . "\r\n" . "Желаемое направление: " . $faculty . "\r\n" . "Телефон: " . $user_phone . "\r\n" . "Email: " . $user_email . "\r\n" . $user_text, 70);
 
 
-        mail("irinamist4@gmail.com", "Заявка на запись", $text_message);
+        mail("supersemeyka69@yandex.ru", "Заявка на запись", $text_message);
         mail($user_email, "Суперсемейка", $text_for_user);
         header("Location: /");
     }
