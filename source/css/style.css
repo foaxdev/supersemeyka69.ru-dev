@@ -2327,3 +2327,50 @@ input[type="file"].visually-hidden {
   .form-section {
     padding: 0;
     margin-top: 130px; } }
+
+.back-forward-buttons-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  margin-top: -40px; }
+
+.back-forward-buttons-list__button {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  width: 60px;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer; }
+  .back-forward-buttons-list__button:hover, .back-forward-buttons-list__button:focus {
+    opacity: 0.6;
+    outline: none; }
+  .back-forward-buttons-list__button:active {
+    opacity: 0.3;
+    outline: none; }
+  .back-forward-buttons-list__button--previous {
+    background-image: url("../img/back.svg"); }
+  .back-forward-buttons-list__button--next {
+    background-image: url("../img/next.svg"); }
+  .back-forward-buttons-list__button--disabled {
+    background-image: none;
+    cursor: initial; }
+    .back-forward-buttons-list__button--disabled:hover, .back-forward-buttons-list__button--disabled:focus {
+      opacity: 1; }
+    .back-forward-buttons-list__button--disabled:active {
+      opacity: 1; }

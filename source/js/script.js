@@ -1,3 +1,5 @@
+let slideIndex = 1;
+
 function initializeMainMenu(elButtonToggle, elMenuWrap, elMainTagline) {
     elButtonToggle.classList.add("header__button-toggle--show");
     elMenuWrap.classList.add("header__menu-wrap--hidden");
@@ -32,6 +34,71 @@ function initializeScheduleLogic(elsButtonToggleSchedule) {
     }
 }
 
+let elsButtonNext = document.querySelectorAll(".back-forward-buttons-list__button--next");
+let elsButtonPrevious = document.querySelectorAll(".back-forward-buttons-list__button--previous");
+
+function initializePreviousNextLogic() {
+    if (elsButtonNext && elsButtonPrevious)
+        showSlides(slideIndex);
+}
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    let elsSlides = document.getElementsByClassName("modal-schedule");
+
+    if (n + 1 > elsSlides.length) {
+        for (let i = 0; i < elsButtonNext.length; i++) {
+            elsButtonNext[i].removeEventListener("click", setNextSlide, true);
+            elsButtonNext[i].classList.add("back-forward-buttons-list__button--disabled");
+        }
+    } else {
+        for (let i = 0; i < elsButtonNext.length; i++) {
+            elsButtonNext[i].addEventListener("click", setNextSlide, true);
+            elsButtonNext[i].classList.remove("back-forward-buttons-list__button--disabled");
+        }
+    }
+
+    if (n - 1 < 1) {
+        for (let i = 0; i < elsButtonPrevious.length; i++) {
+            elsButtonPrevious[i].removeEventListener("click", setPreviousSlide, true);
+            elsButtonPrevious[i].classList.add("back-forward-buttons-list__button--disabled");
+        }
+    } else {
+        for (let i = 0; i < elsButtonPrevious.length; i++) {
+            elsButtonPrevious[i].addEventListener("click", setPreviousSlide, true);
+            elsButtonPrevious[i].classList.remove("back-forward-buttons-list__button--disabled");
+        }
+    }
+
+    for (let i = 0; i < elsSlides.length; i++) {
+        elsSlides[i].classList.remove("modal--show");
+    }
+
+    removeOverlays();
+
+    elsSlides[slideIndex - 1].classList.add("modal--show");
+    elsSlides[slideIndex - 1].previousElementSibling.classList.add("overlay--show");
+}
+
+function removeOverlays() {
+    let elsOverlays = document.querySelectorAll(".overlay");
+
+    for (let i = 0; i < elsOverlays.length; i++) {
+        elsOverlays[i].classList.remove("overlay--show");
+    }
+}
+
+function setNextSlide() {
+    plusSlides(1);
+}
+
+function setPreviousSlide() {
+    plusSlides(-1);
+}
+
 function initializeScheduleImagesLogic(elsSchedulePreviews) {
     for (let i = 0; i < elsSchedulePreviews.length; i++) {
         let elScheduleFullImage = elsSchedulePreviews[i].parentElement.parentElement.nextElementSibling.nextElementSibling;
@@ -41,6 +108,10 @@ function initializeScheduleImagesLogic(elsSchedulePreviews) {
                 evt.preventDefault();
                 if (document.body.clientWidth >= 1200) {
                     elScheduleFullImage.classList.toggle("modal--show");
+                    if (elScheduleFullImage.classList.contains("modal-schedule")) {
+                        slideIndex = parseInt(elScheduleFullImage.getAttribute("data-slide"));
+                        initializePreviousNextLogic();
+                    }
                     let elOverlay = elScheduleFullImage.previousElementSibling;
                     if (elOverlay)
                         elOverlay.classList.add("overlay--show");
