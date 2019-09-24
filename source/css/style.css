@@ -2042,12 +2042,8 @@ input[type="file"].visually-hidden {
 
 @media (min-width: 768px) {
   .photo-gallery--main {
-    display: block; } }
-
-@media (min-width: 1200px) {
-  .photo-gallery--main {
-    width: 1200px;
-    margin: 0 auto; } }
+    display: block;
+    width: 100%; } }
 
 .map {
   width: 100%; }
@@ -2223,10 +2219,11 @@ input[type="file"].visually-hidden {
 
 @media (min-width: 768px) {
   .news {
-    display: block; } }
+    display: block;
+    width: 100%; } }
 
 @media (min-width: 1200px) {
-  .news {
+  .news__wrap {
     width: 1200px;
     margin: 0 auto; } }
 

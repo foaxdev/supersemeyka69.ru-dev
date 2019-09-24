@@ -7,11 +7,12 @@
 @media (min-width: $tablet-width) {
     .news {
         display: block;
+        width: 100%;
     }
 }
 
 @media (min-width: $desktop-width) {
-    .news {
+    .news__wrap {
         width: 1200px;
         margin: 0 auto;
     }
