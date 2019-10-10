@@ -56,7 +56,8 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch("source/js/*.js", gulp.series("js"));
-  gulp.watch("source/template/*.php", gulp.series("copy", "refresh"));
+  gulp.watch(("source/*.php"), gulp.series("copy", "refresh"));
+  gulp.watch(("source/templates/**/*.php"), gulp.series("copy", "refresh"));
   gulp.watch(("source/img/icon-*.svg"), gulp.series("sprite", "html", "refresh"));
   gulp.watch(("source/*.html"), gulp.series("html", "refresh"));
 });
