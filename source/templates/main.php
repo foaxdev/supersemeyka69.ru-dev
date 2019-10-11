@@ -2060,48 +2060,22 @@
     <section class="video" id="video">
         <h2 class="section-header">Видео</h2>
         <ul class="photo-preview-list">
+            <?php foreach($videos as $video): ?>
             <li class="photo-preview-list__item photo-preview-list__item--video">
                 <a>
                     <div>
-                        <p class="photo-preview-list__image photo-preview-list__image--video modal-image">1 сентября</p>
+                        <p class="photo-preview-list__image photo-preview-list__image--video modal-image"><?=$video["title"];?></p>
                     </div>
                 </a>
                 <div class="overlay"></div>
                 <div class="modal">
                     <button class="modal__close-button" type="button">Закрыть</button>
                     <a>
-                        <iframe class="photo-preview-list__original modal__original-image" src="//vk.com/video_ext.php?oid=-183680411&id=456239039&hash=3f8f9c2fc77bbbae&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="photo-preview-list__original modal__original-image" src="<?=$video["link"];?>" width="853" height="480" frameborder="0" allowfullscreen></iframe>
                     </a>
                 </div>
             </li>
-            <li class="photo-preview-list__item photo-preview-list__item--video">
-                <a>
-                    <div>
-                        <p class="photo-preview-list__image photo-preview-list__image--video modal-image">День рождение посёлка Удача</p>
-                    </div>
-                </a>
-                <div class="overlay"></div>
-                <div class="modal">
-                    <button class="modal__close-button" type="button">Закрыть</button>
-                    <a>
-                        <iframe class="photo-preview-list__original modal__original-image" src="//vk.com/video_ext.php?oid=-183680411&id=456239034&hash=b29e01f839e92da3&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
-                    </a>
-                </div>
-            </li>
-            <li class="photo-preview-list__item photo-preview-list__item--video">
-                <a>
-                    <div>
-                        <p class="photo-preview-list__image photo-preview-list__image--video modal-image">Открытие супер-центра</p>
-                    </div>
-                </a>
-                <div class="overlay"></div>
-                <div class="modal">
-                    <button class="modal__close-button" type="button">Закрыть</button>
-                    <a>
-                        <iframe class="photo-preview-list__original modal__original-image" src="//vk.com/video_ext.php?oid=-183680411&id=456239033&hash=c554a37d227c2c68&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
-                    </a>
-                </div>
-            </li>
+            <?php endforeach; ?>
         </ul>
     </section>
 
