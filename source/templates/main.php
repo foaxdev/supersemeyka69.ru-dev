@@ -2188,14 +2188,14 @@
         <h2 class="section-header">Фотогалерея</h2>
         <ul class="photo-preview-list">
             <li class="photo-preview-list__item">
-                <a href="photo-gallery.html">
+                <a href="photo-gallery.php">
                     <picture>
-                        <source type="image/webp" srcset="img/photo/01-tablet.webp">
+                        <source type="image/webp" srcset="img/photo/1-tablet.webp">
 
-                        <img class="photo-preview-list__image modal-image" src="img/photo/01-tablet.jpg" alt="Фотография с занятия">
+                        <img class="photo-preview-list__image modal-image" src="img/photo/1-tablet.jpg" alt="Фотография с занятия">
                     </picture>
                 </a>
-                <a class="modal-toggle-button modal-toggle-button--gallery" href="photo-gallery.html">Наша жизнь</a>
+                <a class="modal-toggle-button modal-toggle-button--gallery" href="photo-gallery.php">Наша жизнь</a>
             </li>
         </ul>
     </section>
