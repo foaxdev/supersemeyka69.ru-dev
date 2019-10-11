@@ -34,9 +34,9 @@
         <div class="header__menu-wrap">
             <nav class="main-nav">
                 <ul class="header__list nav-list">
-                    <li class="nav-list__item"><a class="nav-list__link" href="#duration">Продолжительность</a></li>
-                    <li class="nav-list__item"><a class="nav-list__link" href="#quantity">Численность групп</a></li>
-                    <li class="nav-list__item"><a class="nav-list__link" href="#price">Стоимость</a></li>
+                    <?php foreach($faculty as $name => $title): ?>
+                    <li class="nav-list__item"><a class="nav-list__link" href="#<?=$name;?>"><?=$title;?></a></li>
+                    <?php endforeach; ?>
                 </ul>
             </nav>
             <div class="header__contacts-social-wrap">
@@ -76,7 +76,7 @@
             <a class="footer__link footer__link--email" href="mailto:supersemeyka69@yandex.ru">supersemeyka69@yandex.ru</a>
         </div>
         <div class="footer__company-wrap">
-            <p class="footer__text">Создание сайта - <a class="footer__link" href="https://github.com/foaxdev">FOAX-DEV</a></p>
+            <p class="footer__text">Создание сайта - <a class="footer__link" href="https://foaxdev.site">FOAX-DEV</a></p>
             <a class="footer__link footer__link--email" href="mailto:synthbeing@icloud.com">synthbeing@icloud.com</a>
         </div>
     </div>
