@@ -9,6 +9,6 @@ $page_content = include_template("photo-gallery.php", [
     "photo_quantity" => $photo_quantity
 ]);
 
-$layout_content = include_template("layout-gallery.php", ["content" => $page_content, "page_title" => $page_title]);
+$layout_content = include_template("layout-empty.php", ["content" => $page_content, "page_title" => $page_title]);
 
 print($layout_content);
