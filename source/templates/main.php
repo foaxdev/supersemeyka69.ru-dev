@@ -38,27 +38,28 @@
     <section class="schedule" id="schedule">
         <h2 class="section-header">Расписание</h2>
         <ul class="schedule-list">
+            <?php foreach($schedule as $name => $day): ?>
             <li class="schedule-list__item">
-                <button class="modal-toggle-button" type="button">Понедельник</button>
-                <a href="img/schedule/monday.png">
+                <button class="modal-toggle-button" type="button"><?=$day["title"];?></button>
+                <a href="img/schedule/<?=$name;?>.png">
                     <picture>
-                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/schedule/monday-desktop.webp">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/schedule/monday-tablet.webp">
-                        <source type="image/webp" srcset="img/schedule/monday-mobile.webp">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/schedule/<?=$name;?>-desktop.webp">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/schedule/<?=$name;?>-tablet.webp">
+                        <source type="image/webp" srcset="img/schedule/<?=$name;?>-mobile.webp">
 
-                        <source media="(min-width: 1200px)" srcset="img/schedule/monday-desktop.png">
-                        <source media="(min-width: 768px)" srcset="img/schedule/monday-tablet.png">
-                        <img class="modal-image" src="img/schedule/monday-mobile.png" alt="Расписание на понедельник">
+                        <source media="(min-width: 1200px)" srcset="img/schedule/<?=$name;?>-desktop.png">
+                        <source media="(min-width: 768px)" srcset="img/schedule/<?=$name;?>-tablet.png">
+                        <img class="modal-image" src="img/schedule/<?=$name;?>-mobile.png" alt="Расписание на <?=$day["title"];?>">
                     </picture>
                 </a>
                 <div class="overlay"></div>
-                <div class="modal modal-schedule" data-slide="1">
+                <div class="modal modal-schedule" data-slide="<?=$day["number"];?>">
                     <button class="modal__close-button" type="button">Закрыть</button>
-                    <a href="img/schedule/monday.png">
+                    <a href="img/schedule/<?=$name;?>.png">
                         <picture>
-                            <source type="image/webp" srcset="img/schedule/monday-mobile.webp">
+                            <source type="image/webp" srcset="img/schedule/<?=$name;?>-mobile.webp">
 
-                            <img class="modal-schedule__original-image" src="img/schedule/monday-mobile.png" alt="Расписание на понедельник">
+                            <img class="modal-schedule__original-image" src="img/schedule/<?=$name;?>-mobile.png" alt="Расписание на <?=$day["title"];?>">
                         </picture>
                     </a>
                     <ul class="back-forward-buttons-list">
@@ -67,151 +68,7 @@
                     </ul>
                 </div>
             </li>
-            <li class="schedule-list__item">
-                <button class="modal-toggle-button" type="button">Вторник</button>
-                <a href="img/schedule/tuesday.png">
-                    <picture>
-                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/schedule/tuesday-desktop.webp">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/schedule/tuesday-tablet.webp">
-                        <source type="image/webp" srcset="img/schedule/tuesday-mobile.webp">
-
-                        <source media="(min-width: 1200px)" srcset="img/schedule/tuesday-desktop.png">
-                        <source media="(min-width: 768px)" srcset="img/schedule/tuesday-tablet.png">
-                        <img class="modal-image" src="img/schedule/tuesday-mobile.png" alt="Расписание на вторник">
-                    </picture>
-                </a>
-                <div class="overlay"></div>
-                <div class="modal modal-schedule" data-slide="2">
-                    <button class="modal__close-button" type="button">Закрыть</button>
-                    <a href="img/schedule/tuesday.png">
-                        <picture>
-                            <source type="image/webp" srcset="img/schedule/tuesday-mobile.webp">
-
-                            <img class="modal-schedule__original-image" src="img/schedule/tuesday-mobile.png" alt="Расписание на вторник">
-                        </picture>
-                    </a>
-                    <ul class="back-forward-buttons-list">
-                        <li class="back-forward-buttons-list__item"><button class="back-forward-buttons-list__button back-forward-buttons-list__button--previous" type="button">Предыдущее фото</button></li>
-                        <li class="back-forward-buttons-list__item"><button class="back-forward-buttons-list__button back-forward-buttons-list__button--next" type="button">Следующее фото</button></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="schedule-list__item">
-                <button class="modal-toggle-button" type="button">Среда</button>
-                <a href="img/schedule/wednesday.png">
-                    <picture>
-                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/schedule/wednesday-desktop.webp">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/schedule/wednesday-tablet.webp">
-                        <source type="image/webp" srcset="img/schedule/wednesday-mobile.webp">
-
-                        <source media="(min-width: 1200px)" srcset="img/schedule/wednesday-desktop.png">
-                        <source media="(min-width: 768px)" srcset="img/schedule/wednesday-tablet.png">
-                        <img class="modal-image" src="img/schedule/wednesday-mobile.png" alt="Расписание на среду">
-                    </picture>
-                </a>
-                <div class="overlay"></div>
-                <div class="modal modal-schedule" data-slide="3">
-                    <button class="modal__close-button" type="button">Закрыть</button>
-                    <a href="img/schedule/wednesday.png">
-                        <picture>
-                            <source type="image/webp" srcset="img/schedule/wednesday-mobile.webp">
-
-                            <img class="modal-schedule__original-image" src="img/schedule/wednesday-mobile.png" alt="Расписание на среду">
-                        </picture>
-                    </a>
-                    <ul class="back-forward-buttons-list">
-                        <li class="back-forward-buttons-list__item"><button class="back-forward-buttons-list__button back-forward-buttons-list__button--previous" type="button">Предыдущее фото</button></li>
-                        <li class="back-forward-buttons-list__item"><button class="back-forward-buttons-list__button back-forward-buttons-list__button--next" type="button">Следующее фото</button></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="schedule-list__item">
-                <button class="modal-toggle-button" type="button">Четверг</button>
-                <a href="img/schedule/thursday.png">
-                    <picture>
-                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/schedule/thursday-desktop.webp">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/schedule/thursday-tablet.webp">
-                        <source type="image/webp" srcset="img/schedule/thursday-mobile.webp">
-
-                        <source media="(min-width: 1200px)" srcset="img/schedule/thursday-desktop.png">
-                        <source media="(min-width: 768px)" srcset="img/schedule/thursday-tablet.png">
-                        <img class="modal-image" src="img/schedule/thursday-mobile.png" alt="Расписание на четверг">
-                    </picture>
-                </a>
-                <div class="overlay"></div>
-                <div class="modal modal-schedule" data-slide="4">
-                    <button class="modal__close-button" type="button">Закрыть</button>
-                    <a href="img/schedule/thursday.png">
-                        <picture>
-                            <source type="image/webp" srcset="img/schedule/thursday-mobile.webp">
-
-                            <img class="modal-schedule__original-image" src="img/schedule/thursday-mobile.png" alt="Расписание на четверг">
-                        </picture>
-                    </a>
-                    <ul class="back-forward-buttons-list">
-                        <li class="back-forward-buttons-list__item"><button class="back-forward-buttons-list__button back-forward-buttons-list__button--previous" type="button">Предыдущее фото</button></li>
-                        <li class="back-forward-buttons-list__item"><button class="back-forward-buttons-list__button back-forward-buttons-list__button--next" type="button">Следующее фото</button></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="schedule-list__item">
-                <button class="modal-toggle-button" type="button">Пятница</button>
-                <a href="img/schedule/friday.png">
-                    <picture>
-                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/schedule/friday-desktop.webp">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/schedule/friday-tablet.webp">
-                        <source type="image/webp" srcset="img/schedule/friday-mobile.webp">
-
-                        <source media="(min-width: 1200px)" srcset="img/schedule/friday-desktop.png">
-                        <source media="(min-width: 768px)" srcset="img/schedule/friday-tablet.png">
-                        <img class="modal-image" src="img/schedule/friday-mobile.png" alt="Расписание на пятницу">
-                    </picture>
-                </a>
-                <div class="overlay"></div>
-                <div class="modal modal-schedule" data-slide="5">
-                    <button class="modal__close-button" type="button">Закрыть</button>
-                    <a href="img/schedule/friday.png">
-                        <picture>
-                            <source type="image/webp" srcset="img/schedule/friday-mobile.webp">
-
-                            <img class="modal-schedule__original-image" src="img/schedule/friday-mobile.png" alt="Расписание на пятницу">
-                        </picture>
-                    </a>
-                    <ul class="back-forward-buttons-list">
-                        <li class="back-forward-buttons-list__item"><button class="back-forward-buttons-list__button back-forward-buttons-list__button--previous" type="button">Предыдущее фото</button></li>
-                        <li class="back-forward-buttons-list__item"><button class="back-forward-buttons-list__button back-forward-buttons-list__button--next" type="button">Следующее фото</button></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="schedule-list__item">
-                <button class="modal-toggle-button" type="button">Суббота</button>
-                <a href="img/schedule/saturday.png">
-                    <picture>
-                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/schedule/saturday-desktop.webp">
-                        <source type="image/webp" media="(min-width: 768px)" srcset="img/schedule/saturday-tablet.webp">
-                        <source type="image/webp" srcset="img/schedule/saturday-mobile.webp">
-
-                        <source media="(min-width: 1200px)" srcset="img/schedule/saturday-desktop.png">
-                        <source media="(min-width: 768px)" srcset="img/schedule/saturday-tablet.png">
-                        <img class="modal-image" src="img/schedule/saturday-mobile.png" alt="Расписание на субботу">
-                    </picture>
-                </a>
-                <div class="overlay"></div>
-                <div class="modal modal-schedule" data-slide="6">
-                    <button class="modal__close-button" type="button">Закрыть</button>
-                    <a href="img/schedule/saturday.png">
-                        <picture>
-                            <source type="image/webp" srcset="img/schedule/saturday-mobile.webp">
-
-                            <img class="modal-schedule__original-image" src="img/schedule/saturday-mobile.png" alt="Расписание на субботу">
-                        </picture>
-                    </a>
-                    <ul class="back-forward-buttons-list">
-                        <li class="back-forward-buttons-list__item"><button class="back-forward-buttons-list__button back-forward-buttons-list__button--previous" type="button">Предыдущее фото</button></li>
-                        <li class="back-forward-buttons-list__item"><button class="back-forward-buttons-list__button back-forward-buttons-list__button--next" type="button">Следующее фото</button></li>
-                    </ul>
-                </div>
-            </li>
+            <?php endforeach; ?>
         </ul>
     </section>
 
