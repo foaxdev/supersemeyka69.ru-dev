@@ -749,7 +749,7 @@ input[type="file"].visually-hidden {
   margin-top: 80px; }
   .introduction--english, .introduction--pre-school, .introduction--creative-studio, .introduction--science, .introduction--acting, .introduction--karapuziki {
     background-image: url("../img/bg/school.png"); }
-  .introduction--gymnastics, .introduction--kickboxing, .introduction--kids-fitness, .introduction--fitness-training {
+  .introduction--gymnastics, .introduction--kickboxing, .introduction--kids-fitness, .introduction--fitness-training, .introduction--pilates {
     background-image: url("../img/bg/sport.png"); }
 
 .introduction__image {
@@ -1297,6 +1297,9 @@ input[type="file"].visually-hidden {
 .introduction-list--karapuziki li::before {
   background-image: url("../img/list-icons/baby.png"); }
 
+.introduction-list--pilates li::before {
+  background-image: url("../img/list-icons/gymnastics.png"); }
+
 .introduction__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1525,8 +1528,6 @@ input[type="file"].visually-hidden {
     background-color: #6a296c; }
     .modal-toggle-button--teachers:hover, .modal-toggle-button--teachers:focus {
       background-color: #f1d1ff; }
-  .modal-toggle-button--teachers-name {
-    display: none; }
   .modal-toggle-button--gallery {
     display: block;
     margin: 30px 30px 30px auto;
@@ -1551,6 +1552,10 @@ input[type="file"].visually-hidden {
       width: fit-content;
       padding: 15px 40px 10px 40px;
       margin: 30px 0 30px auto; }
+    .modal-toggle-button--teachers-name {
+      display: block;
+      font-size: 16px;
+      text-align: center; }
   .modal-toggle-button--faculty {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -71,6 +71,10 @@
     background-image: url("../img/list-icons/baby.png");
 }
 
+.introduction-list--pilates li::before {
+    background-image: url("../img/list-icons/gymnastics.png");
+}
+
 .introduction__link {
     display: flex;
     justify-content: center;

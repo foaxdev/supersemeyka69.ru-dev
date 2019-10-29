@@ -1626,6 +1626,45 @@
             <li class="teachers-list__item">
                 <div class="teachers-list__short-info">
                     <picture>
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/teachers/antonova-desktop.webp">
+                        <source type="image/webp" srcset="img/teachers/antonova-tablet.webp">
+
+                        <source media="(min-width: 1200px)" srcset="img/teachers/antonova-desktop.jpg">
+                        <img class="teachers-list__image-preview" src="img/teachers/antonova-tablet.jpg" alt="Фотография педагога Антоновой Марии Михайловны">
+                    </picture>
+                    <button class="teachers-list__button-toggle modal-toggle-button modal-toggle-button--teachers">Информация</button>
+                    <span class="teachers-list__subject">Пилатес</span>
+                    <button class="teachers-list__button-toggle modal-toggle-button modal-toggle-button--teachers-name">Антонова Мария Михайловна</button>
+                </div>
+                <div class="teachers-list__info-wrap teachers-list__info-wrap--hidden">
+                    <button class="teachers-list__close-button" type="button">Закрыть</button>
+                    <div class="teachers-list__main-info-wrap">
+                        <picture>
+                            <source type="image/webp" srcset="img/teachers/antonova-mobile.webp">
+
+                            <img class="teachers-list__image" src="img/teachers/antonova-mobile.jpg" alt="Фотография педагога Антоновой Марии Михайловны">
+                        </picture>
+                        <ul class="teacher-description-list">
+                            <li class="teacher-description-list__item">Сертифицированный фитнес-тренер по различным направлениям: пилатес, йога, аэро йога, силовые и функциональные направления.</li>
+                            <li class="teacher-description-list__item">Опыт работы в фитнес индустрии - 11 лет.</li>
+                            <li class="teacher-description-list__item">В 2009 году получила высшее профессиональное образование в Тверском государственном университете по специальности «Физическая культура и спорт».</li>
+                            <li class="teacher-description-list__item">2008 год "Базовый семинар инструктора".</li>
+                            <li class="teacher-description-list__item">2013 - 2015 год Учитель физического воспитания МОУ СОШ 43.</li>
+                            <li class="teacher-description-list__item">2015 год Семинар "Фитнес - йога" - 1 уровень.</li>
+                            <li class="teacher-description-list__item">2016 год "Методика преподавания Аэро йоги" г. Санкт-Петербург.</li>
+                            <li class="teacher-description-list__item">2017 год Повышение квалификации по дополнительной профессиональной программе "Тренер-преподователь по адаптивной физической культуре".</li>
+                            <li class="teacher-description-list__item">Курс в Поволжской академии йоги, психологии и прикладных практик по программе "Методики йоги по системе Оптимальной Физической Активности".</li>
+                            <li class="teacher-description-list__item">2018 год Обучающий курс "Фитнес-диетолог с нуля до клиентов" по теме: "Основы диетотерапии при различных заболеваниях" и по теме "Коррекция избыточного веса в условиях индустрии красоты и фитнеса"</li>
+                            <li class="teacher-description-list__item">2019 год Приняла участие в семинаре "Основы МФР" (миофасциальное расслабление).</li>
+                            <li class="teacher-description-list__item">Автор онлайн - проекта "☘PRO - стройность и PRO-здоровье".</li>
+                            <li class="teacher-description-list__item">Провожу консультации по сбалансированному питанию на основе индивидуальных особенностей клиента и сформированной цели.</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="teachers-list__item">
+                <div class="teachers-list__short-info">
+                    <picture>
                         <source type="image/webp" media="(min-width: 1200px)" srcset="img/teachers/philippova-desktop.webp">
                         <source type="image/webp" srcset="img/teachers/philippova-tablet.webp">
 
