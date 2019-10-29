@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
     <title><?=$title;?></title>
-    <link rel="stylesheet" href="css/style.min.css">
 
     <link rel="preload" href="fonts/bloggersans.woff2" as="font">
     <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
+
+    <link rel="stylesheet" href="css/style.min.css">
 
     <script src="js/picturefill.min.js" async=""></script>
 </head>
