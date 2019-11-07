@@ -2376,3 +2376,46 @@ input[type="file"].visually-hidden {
       opacity: 1; }
     .back-forward-buttons-list__button--disabled:active {
       opacity: 1; }
+
+.cameras {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: calc(100vh - 130px);
+  width: 100%;
+  padding: 100px 0; }
+
+.cameras__iframe {
+  width: 100%;
+  min-height: 210px;
+  border: none; }
+
+@media (min-width: 768px) {
+  .cameras {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: calc(100vh - 90px); }
+  .cameras__iframe {
+    width: 48%;
+    min-height: 300px;
+    margin-bottom: 10px; } }
+
+@media (min-width: 1200px) {
+  .cameras {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 200px 0 0 100px; } }
