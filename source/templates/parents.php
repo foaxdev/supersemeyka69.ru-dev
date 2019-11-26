@@ -8,7 +8,7 @@
         </picture>
         <div class="introduction__wrap">
             <p class="introduction__description">«Свободные родители» - это свободное пространство для самостоятельной деятельности, под присмотром воспитателя, включающее в себя множество развивающих и игровых зон.</p>
-            <ul class="introduction-list introduction-list--science">
+            <ul class="introduction-list introduction-list--pre-school">
                 <li class="introduction-list__item">развивающие игры на внимание и мышление</li>
                 <li class="introduction-list__item">развивающие игры на мелкую моторику</li>
                 <li class="introduction-list__item">зоны для свободных игр</li>
