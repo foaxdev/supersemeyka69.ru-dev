@@ -1665,6 +1665,37 @@
             <li class="teachers-list__item">
                 <div class="teachers-list__short-info">
                     <picture>
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/teachers/shalaeva-desktop.webp">
+                        <source type="image/webp" srcset="img/teachers/shalaeva-tablet.webp">
+
+                        <source media="(min-width: 1200px)" srcset="img/teachers/shalaeva-desktop.jpg">
+                        <img class="teachers-list__image-preview" src="img/teachers/shalaeva-tablet.jpg" alt="Фотография педагога Шалаевой Екатерины Александровны">
+                    </picture>
+                    <button class="teachers-list__button-toggle modal-toggle-button modal-toggle-button--teachers">Информация</button>
+                    <span class="teachers-list__subject">Свободные родители</span>
+                    <button class="teachers-list__button-toggle modal-toggle-button modal-toggle-button--teachers-name">Шалаева Екатерина Александровна</button>
+                </div>
+                <div class="teachers-list__info-wrap teachers-list__info-wrap--hidden">
+                    <button class="teachers-list__close-button" type="button">Закрыть</button>
+                    <div class="teachers-list__main-info-wrap">
+                        <picture>
+                            <source type="image/webp" srcset="img/teachers/shalaeva-mobile.webp">
+
+                            <img class="teachers-list__image" src="img/teachers/shalaeva-mobile.jpg" alt="Фотография педагога Шалаевой Екатерины Александровны">
+                        </picture>
+                        <ul class="teacher-description-list">
+                            <li class="teacher-description-list__item">Стаж педагогической работы 3 года.</li>
+                            <li class="teacher-description-list__item">В 2013 году закончила ТвГУ по специальности преподаватель химии. Химик.</li>
+                            <li class="teacher-description-list__item">В 2015 году стала участником методического семинара "Актуальные вопросы конструирования урока химии в условиях перехода на ФГОС. Электронная форма учебника".</li>
+                            <li class="teacher-description-list__item">В 2016 году награждена дипломом за организацию сверхпрограммной общероссийской предметной олимпиады Олимпус Осенняя Сессия.</li>
+                            <li class="teacher-description-list__item">В 2018 году успешно освоила программу бизнес- тренинга "Тренинг для тренеров. Мастерство".</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="teachers-list__item">
+                <div class="teachers-list__short-info">
+                    <picture>
                         <source type="image/webp" media="(min-width: 1200px)" srcset="img/teachers/philippova-desktop.webp">
                         <source type="image/webp" srcset="img/teachers/philippova-tablet.webp">
 
