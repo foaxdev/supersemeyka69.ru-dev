@@ -68,15 +68,6 @@ $faculties = array(
             "price" => "Стоимость"
         )
     ),
-    "fitness-training" => array(
-        "alt" => "Обложка направления fitness training",
-        "title" => "Fitness training",
-        "nav" => array(
-            "duration" => "Продолжительность",
-            "quantity" => "Численность групп",
-            "price" => "Стоимость"
-        )
-    ),
     "acting" => array(
         "alt" => "Обложка направления актерское мастерство",
         "title" => "Актерское мастерство",
@@ -103,5 +94,14 @@ $faculties = array(
             "quantity" => "Численность групп",
             "price" => "Стоимость"
         )
-    )
+    ),
+     "parents" => array(
+         "alt" => "Обложка направления свободные родители",
+         "title" => "Свободные родители",
+         "nav" => array(
+             "duration" => "Продолжительность",
+             "quantity" => "Численность групп",
+             "price" => "Стоимость"
+         )
+     )
 );
