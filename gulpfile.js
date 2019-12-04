@@ -105,7 +105,8 @@ gulp.task("copy", () => {
         "source/css/*.css",
         "source/templates/*.php",
         "source/*.php",
-        "source/*.ico"
+        "source/*.ico",
+        "source/PHPMailer/**"
     ], {
         base: "source"
     })
