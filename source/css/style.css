@@ -747,7 +747,7 @@ input[type="file"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 80px;
-  background-size: contain; }
+  background-size: cover; }
   .introduction--english, .introduction--pre-school, .introduction--creative-studio, .introduction--science, .introduction--acting, .introduction--karapuziki {
     background-image: url("../img/bg/school.png"); }
   .introduction--gymnastics, .introduction--kickboxing, .introduction--kids-fitness, .introduction--fitness-training, .introduction--pilates {
@@ -1385,7 +1385,8 @@ input[type="file"].visually-hidden {
     font-size: 22px; } }
 
 .quantity {
-  background-image: url("../img/bg/school.png"); }
+  background-image: url("../img/bg/school.png");
+  background-size: cover; }
 
 .quantity__text-wrap {
   display: -webkit-box;
@@ -1463,7 +1464,8 @@ input[type="file"].visually-hidden {
     font-size: 22px; } }
 
 .materials {
-  background-image: url("../img/bg/school.png"); }
+  background-image: url("../img/bg/school.png");
+  background-size: cover; }
 
 .materials__note {
   display: -webkit-box;
@@ -1516,10 +1518,13 @@ input[type="file"].visually-hidden {
     .modal-toggle-button--teachers-name:hover, .modal-toggle-button--teachers-name:focus {
       background-color: #ff6d05; }
 
-.modal-toggle-button--faculty {
+.modal-toggle-button--faculty,
+.modal-toggle-button--gallery {
   color: #6a296c;
   background-color: #f1d1ff; }
-  .modal-toggle-button--faculty:hover, .modal-toggle-button--faculty:focus {
+  .modal-toggle-button--faculty:hover, .modal-toggle-button--faculty:focus,
+  .modal-toggle-button--gallery:hover,
+  .modal-toggle-button--gallery:focus {
     color: #ffffff;
     background-color: #6a296c; }
 
@@ -1535,6 +1540,7 @@ input[type="file"].visually-hidden {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    color: #ffffff;
     background-color: #6a296c; } }
 
 @media (min-width: 1200px) {
@@ -1557,14 +1563,17 @@ input[type="file"].visually-hidden {
       display: block;
       font-size: 16px;
       text-align: center; }
-  .modal-toggle-button--faculty {
+  .modal-toggle-button--faculty,
+  .modal-toggle-button--gallery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .modal-toggle-button--faculty:hover, .modal-toggle-button--faculty:focus {
+    .modal-toggle-button--faculty:hover, .modal-toggle-button--faculty:focus,
+    .modal-toggle-button--gallery:hover,
+    .modal-toggle-button--gallery:focus {
       color: #6a296c;
       background-color: #f1d1ff; } }
 
@@ -1641,87 +1650,9 @@ input[type="file"].visually-hidden {
   .materials-list__original-image {
     height: 550px; } }
 
-.footer {
-  background-color: #6a296c; }
-
-.footer__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px 20px 0 20px; }
-
-.footer__company-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  .footer__company-wrap:last-child {
-    margin-top: 20px; }
-
-.footer__text,
-.footer__link {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-  color: #ffffff; }
-
-.footer__link {
-  text-decoration: underline; }
-  .footer__link:hover, .footer__link:focus {
-    opacity: 0.6;
-    outline: none; }
-  .footer__link:active {
-    opacity: 0.3; }
-  .footer__link--email {
-    margin-bottom: 10px;
-    font-size: 14px; }
-
-@media (min-width: 768px) {
-  .footer__wrap {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 30px 30px 0 30px; }
-  .footer__company-wrap:last-child {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    margin-top: 0; }
-  .footer__text,
-  .footer__link {
-    font-size: 20px; }
-  .footer__link--email {
-    margin-bottom: 20px;
-    font-size: 18px; } }
-
-@media (min-width: 1200px) {
-  .footer__wrap {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 50px 50px 0 50px; }
-  .footer__text,
-  .footer__link {
-    font-size: 22px; }
-  .footer__link--email {
-    margin-bottom: 30px;
-    font-size: 18px; } }
-
 .cloths {
-  background-image: url("../img/bg/school.png"); }
+  background-image: url("../img/bg/school.png");
+  background-size: cover; }
 
 .cloths__text-wrap {
   display: -webkit-box;
@@ -2042,7 +1973,7 @@ input[type="file"].visually-hidden {
 
 .photo-gallery {
   background-image: url("../img/bg/school.png");
-  background-size: contain; }
+  background-size: cover; }
 
 .photo-gallery--main {
   display: none; }
@@ -2051,6 +1982,11 @@ input[type="file"].visually-hidden {
   .photo-gallery--main {
     display: block;
     width: 100%; } }
+
+@media (min-width: 1200px) {
+  .photo-gallery__wrap {
+    width: 1200px;
+    margin: 0 auto; } }
 
 .map {
   width: 100%; }
@@ -2081,7 +2017,7 @@ input[type="file"].visually-hidden {
 
 .contacts {
   background-image: url("../img/bg/school.png");
-  background-size: contain; }
+  background-size: cover; }
 
 .contacts__social-wrap {
   width: 100%; }
@@ -2216,7 +2152,7 @@ input[type="file"].visually-hidden {
 .video {
   display: none;
   background-image: url("../img/bg/school.png");
-  background-size: contain; }
+  background-size: cover; }
 
 @media (min-width: 768px) {
   .video {
@@ -2225,7 +2161,7 @@ input[type="file"].visually-hidden {
 .news {
   display: none;
   background-image: url("../img/bg/school.png");
-  background-size: contain; }
+  background-size: cover; }
 
 @media (min-width: 768px) {
   .news {
@@ -2239,15 +2175,15 @@ input[type="file"].visually-hidden {
 
 .schedule {
   background-image: url("../img/bg/school.png");
-  background-size: contain; }
+  background-size: cover; }
 
 .faculties {
   background-image: url("../img/bg/school.png");
-  background-size: contain; }
+  background-size: cover; }
 
 .teachers {
   background-image: url("../img/bg/school.png");
-  background-size: contain; }
+  background-size: cover; }
 
 .form {
   width: 100%; }
@@ -2326,7 +2262,8 @@ input[type="file"].visually-hidden {
 .form-section {
   padding: 0 20px 40px 20px;
   margin-top: 80px;
-  background-image: url("../img/bg/school.png"); }
+  background-image: url("../img/bg/school.png");
+  background-size: cover; }
 
 @media (min-width: 768px) {
   .form-section {

@@ -87,15 +87,6 @@
 
 <?=$content; ?>
 
-<footer class="footer">
-    <div class="footer__wrap">
-        <div class="footer__company-wrap">
-            <p class="footer__text">Суперсемейка</p>
-            <a class="footer__link footer__link--email" href="mailto:supersemeyka69@yandex.ru">supersemeyka69@yandex.ru</a>
-        </div>
-    </div>
-</footer>
-
 <script src="js/script.min.js" defer=""></script>
 </body>
 </html>

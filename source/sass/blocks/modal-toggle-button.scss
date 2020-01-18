@@ -48,7 +48,8 @@
     }
 }
 
-.modal-toggle-button--faculty {
+.modal-toggle-button--faculty,
+.modal-toggle-button--gallery {
     color: $violet;
 
     background-color: $light-violet;
@@ -79,6 +80,7 @@
             margin: 30px 30px 30px auto;
             width: fit-content;
 
+            color: $white;
             background-color: $violet;
         }
     }
@@ -114,7 +116,8 @@
         }
     }
 
-    .modal-toggle-button--faculty {
+    .modal-toggle-button--faculty,
+    .modal-toggle-button--gallery {
         display: flex;
         justify-content: center;
 

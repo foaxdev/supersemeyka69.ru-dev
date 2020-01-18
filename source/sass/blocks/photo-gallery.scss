@@ -1,6 +1,6 @@
 .photo-gallery {
     background-image: url("../img/bg/school.png");
-    background-size: contain;
+    background-size: cover;
 }
 
 .photo-gallery--main {
@@ -11,5 +11,12 @@
     .photo-gallery--main {
         display: block;
         width: 100%;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .photo-gallery__wrap {
+        width: 1200px;
+        margin: 0 auto;
     }
 }

@@ -76,15 +76,6 @@
 
 <?=$content; ?>
 
-<footer class="footer">
-    <div class="footer__wrap">
-        <div class="footer__company-wrap">
-            <p class="footer__text">Суперсемейка</p>
-            <a class="footer__link footer__link--email" href="mailto:supersemeyka69@yandex.ru">supersemeyka69@yandex.ru</a>
-        </div>
-    </div>
-</footer>
-
 <script src="https://api-maps.yandex.ru/2.1/?apikey=cd34823f-0b8b-4aba-be82-72027d93120e&lang=en_US"></script>
 <script src="js/script.min.js" defer=""></script>
 </body>

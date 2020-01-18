@@ -2124,6 +2124,16 @@
                 </a>
                 <a class="modal-toggle-button modal-toggle-button--gallery" href="photo-gallery.php">Наша жизнь</a>
             </li>
+            <li class="photo-preview-list__item">
+                <a href="photo-ny.php">
+                    <picture>
+                        <source type="image/webp" srcset="img/photo/ny/preview.webp">
+
+                        <img class="photo-preview-list__image modal-image" src="img/photo/ny/preview.jpg" alt="Фотография с Нового года">
+                    </picture>
+                </a>
+                <a class="modal-toggle-button modal-toggle-button--gallery" href="photo-ny.php">Новый год</a>
+            </li>
         </ul>
     </section>
 
