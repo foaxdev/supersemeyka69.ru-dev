@@ -2,6 +2,7 @@
     display: none;
 
     background-image: url("../img/bg/school.png");
+    background-size: contain;
 }
 
 @media (min-width: $tablet-width) {

@@ -746,7 +746,8 @@ input[type="file"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 80px; }
+  margin-top: 80px;
+  background-size: contain; }
   .introduction--english, .introduction--pre-school, .introduction--creative-studio, .introduction--science, .introduction--acting, .introduction--karapuziki {
     background-image: url("../img/bg/school.png"); }
   .introduction--gymnastics, .introduction--kickboxing, .introduction--kids-fitness, .introduction--fitness-training, .introduction--pilates {
@@ -2040,7 +2041,8 @@ input[type="file"].visually-hidden {
     outline: none; } }
 
 .photo-gallery {
-  background-image: url("../img/bg/school.png"); }
+  background-image: url("../img/bg/school.png");
+  background-size: contain; }
 
 .photo-gallery--main {
   display: none; }
@@ -2078,7 +2080,8 @@ input[type="file"].visually-hidden {
     height: 515px; } }
 
 .contacts {
-  background-image: url("../img/bg/school.png"); }
+  background-image: url("../img/bg/school.png");
+  background-size: contain; }
 
 .contacts__social-wrap {
   width: 100%; }
@@ -2212,7 +2215,8 @@ input[type="file"].visually-hidden {
 
 .video {
   display: none;
-  background-image: url("../img/bg/school.png"); }
+  background-image: url("../img/bg/school.png");
+  background-size: contain; }
 
 @media (min-width: 768px) {
   .video {
@@ -2220,7 +2224,8 @@ input[type="file"].visually-hidden {
 
 .news {
   display: none;
-  background-image: url("../img/bg/school.png"); }
+  background-image: url("../img/bg/school.png");
+  background-size: contain; }
 
 @media (min-width: 768px) {
   .news {
@@ -2233,13 +2238,16 @@ input[type="file"].visually-hidden {
     margin: 0 auto; } }
 
 .schedule {
-  background-image: url("../img/bg/school.png"); }
+  background-image: url("../img/bg/school.png");
+  background-size: contain; }
 
 .faculties {
-  background-image: url("../img/bg/school.png"); }
+  background-image: url("../img/bg/school.png");
+  background-size: contain; }
 
 .teachers {
-  background-image: url("../img/bg/school.png"); }
+  background-image: url("../img/bg/school.png");
+  background-size: contain; }
 
 .form {
   width: 100%; }
