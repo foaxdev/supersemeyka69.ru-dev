@@ -5,15 +5,14 @@ require_once("PHPMailer/PHPMailerAutoload.php");
 $mail = new PHPMailer;
 $mail->CharSet = "UTF-8";
 
-// Настройки SMTP
 $mail->isSMTP();
 $mail->SMTPAuth = true;
 $mail->SMTPDebug = 0;
 
-$mail->Host = 'ssl://smtp.yandex.ru';
+$mail->Host = "ssl://smtp.yandex.ru";
 $mail->Port = 465;
-$mail->Username = 'supersemeyka69@yandex.ru';
-$mail->Password = 'Super_69';
+$mail->Username = "supersemeyka69@yandex.ru";
+$mail->Password = "Super_69";
 
 $faculties = array(
     "Английский язык",
@@ -68,21 +67,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user_email = $_POST["email"];
         $text = $_POST["text"];
         $text_for_user = "Ваша заявка принята. Спасибо за обращение!";
-        $text_subject = 'Заявка';
+        $text_subject = "Заявка";
+        $supersemeyka = "supersemeyka";
 
-        $user_text = 'Сообщение от пользователя: ' . $text;
+        $user_text = "Сообщение от пользователя: "" . $text;
         if (sizeof($text) == 0) {
-            $user_text = '';
+            $user_text = "";
         }
         $text_message = wordwrap("Имя: " . $user_name . "\r\n" . "Желаемое направление: " . $faculty . "\r\n" . "Телефон: " . $user_phone . "\r\n" . "Email: " . $user_email . "\r\n" . $user_text, 70);
 
-        $mail->setFrom('supersemeyka69@yandex.ru', 'supersemeyka');
-        $mail->addAddress('supersemeyka69@yandex.ru', 'supersemeyka');
+        $mail->setFrom("supersemeyka69@yandex.ru", $supersemeyka);
+        $mail->addAddress("supersemeyka69@yandex.ru", $supersemeyka);
         $mail->Subject = $text_subject;
         $mail->msgHTML($text_message);
         $mail->send();
 
-        $mail->addAddress($user_email , 'supersemeyka');
+        $mail->addAddress($user_email , $supersemeyka);
         $mail->msgHTML($text_for_user);
         $mail->send();
 
