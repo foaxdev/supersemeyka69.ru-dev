@@ -98,10 +98,6 @@
             <p class="footer__text">Суперсемейка</p>
             <a class="footer__link footer__link--email" href="mailto:supersemeyka69@yandex.ru">supersemeyka69@yandex.ru</a>
         </div>
-        <div class="footer__company-wrap">
-            <p class="footer__text">Создание сайта - <a class="footer__link" href="https://foaxdev.site">FOAX-DEV</a></p>
-            <a class="footer__link footer__link--email" href="mailto:foaxdev@yahoo.com">foaxdev@yahoo.com</a>
-        </div>
     </div>
 </footer>
 

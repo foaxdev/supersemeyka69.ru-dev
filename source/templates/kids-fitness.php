@@ -16,7 +16,7 @@
                 <li class="introduction-list__item">прививается активная жизненная позиция</li>
                 <li class="introduction-list__item">повышается работоспособность</li>
             </ul>
-            <a class="introduction__link" href="request.php">Записаться</a>
+            <a class="introduction__link" href="request.php?faculty=kids-fitness">Записаться</a>
         </div>
     </section>
 

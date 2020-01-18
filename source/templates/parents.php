@@ -16,7 +16,7 @@
                 <li class="introduction-list__item">творческое искусство (лепка, рисование, аппликации) ***по желанию</li>
                 <li class="introduction-list__item">общение и взаимодействие со сверстниками</li>
             </ul>
-            <a class="introduction__link" href="request.php">Записаться</a>
+            <a class="introduction__link" href="request.php?faculty=parents">Записаться</a>
         </div>
     </section>
 

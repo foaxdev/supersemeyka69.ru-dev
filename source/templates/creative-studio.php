@@ -16,7 +16,7 @@
                 <li class="introduction-list__item">оригами</li>
                 <li class="introduction-list__item">аппликация</li>
             </ul>
-            <a class="introduction__link" href="request.php">Записаться</a>
+            <a class="introduction__link" href="request.php?faculty=creative-studio">Записаться</a>
         </div>
     </section>
 

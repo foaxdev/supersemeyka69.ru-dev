@@ -15,7 +15,7 @@
                 <li class="introduction-list__item">игровая часть (игры формируют соревновательный дух, развивают основные физические качества, придают положительный эмоциональный фон)</li>
                 <li class="introduction-list__item">заминка ( в заминку входит растяжка, работа на укрепление мышц, связок, сухожилий, расслабление по средством дыхательных упражнений)</li>
             </ul>
-            <a class="introduction__link" href="request.php">Записаться</a>
+            <a class="introduction__link" href="request.php?faculty=kickboxing">Записаться</a>
         </div>
     </section>
 

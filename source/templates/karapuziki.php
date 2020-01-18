@@ -16,7 +16,7 @@
                 <li class="introduction-list__item">развивать любознательность, наблюдательность</li>
                 <li class="introduction-list__item">побуждать к творчеству (продуктивная деятельность лепка, рисование, аппликация)</li>
             </ul>
-            <a class="introduction__link" href="request.php">Записаться</a>
+            <a class="introduction__link" href="request.php?faculty=karapuziki">Записаться</a>
         </div>
     </section>
 

@@ -14,7 +14,7 @@
                 <li class="introduction-list__item">Проводится в медленном темпе, под медленную, современную музыку.</li>
                 <li class="introduction-list__item">В конце тренировки учимся полностью расслаблять своё тело и снимать напряжение.</li>
             </ul>
-            <a class="introduction__link" href="request.php">Записаться</a>
+            <a class="introduction__link" href="request.php?faculty=pilates">Записаться</a>
         </div>
     </section>
 

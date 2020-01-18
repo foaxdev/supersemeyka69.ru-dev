@@ -15,7 +15,7 @@
                 <li class="introduction-list__item">мотивация детей на дальнейшее изучение английского языка в школе</li>
                 <li class="introduction-list__item">привитие базовых учебных навыков</li>
             </ul>
-            <a class="introduction__link" href="request.php">Записаться</a>
+            <a class="introduction__link" href="request.php?faculty=english">Записаться</a>
         </div>
     </section>
 

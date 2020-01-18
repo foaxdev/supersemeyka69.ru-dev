@@ -1,5 +1,6 @@
 <?php
 require_once("helpers.php");
+require_once("faculties.php");
 require_once("PHPMailer/PHPMailerAutoload.php");
 
 $mail = new PHPMailer;
@@ -14,7 +15,21 @@ $mail->Port = 465;
 $mail->Username = "supersemeyka69@yandex.ru";
 $mail->Password = "Super_69";
 
-$faculties = array(
+$facultiesValues = array(
+    "english",
+    "acting",
+    "creative-studio",
+    "gymnastics",
+    "kickboxing",
+    "kids-fitness",
+    "pre-school",
+    "science",
+    "karapuziki",
+    "pilates",
+    "parents"
+);
+
+$facultiesNames = array(
     "Английский язык",
     "Актерское мастерство",
     "Творческая мастерская",
@@ -37,6 +52,12 @@ function getPostValue($name) {
 
 function isFacultySelected($faculty) {
     return $_POST["faculty"] == $faculty;
+}
+
+$faculty = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    $faculty = $_GET["faculty"];
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -62,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (count($errors) === 0) {
         $user_name = $_POST["name"];
-        $faculty = $_POST["faculty"];
+        $faculty = $faculties[$_POST["faculty"]]["title"];
         $user_phone = $_POST["tel"];
         $user_email = $_POST["email"];
         $text = $_POST["text"];
@@ -70,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $text_subject = "Заявка";
         $supersemeyka = "supersemeyka";
 
-        $user_text = "Сообщение от пользователя: "" . $text;
+        $user_text = "Сообщение от пользователя: " . $text;
         if (sizeof($text) == 0) {
             $user_text = "";
         }
@@ -91,7 +112,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $form_content = include_template("form.php", [
-    "arr_faculties" => $faculties,
+    "arr_faculties" => $facultiesValues,
+    "facultiesNames" => $facultiesNames,
+    "faculty"=> $faculty,
     "errors" => $errors
 ]);
 

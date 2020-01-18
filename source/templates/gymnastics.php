@@ -18,7 +18,7 @@
                 <li class="introduction-list__item">упражнения на осанку</li>
                 <li class="introduction-list__item">общая физическая подготовка (ОФП)</li>
             </ul>
-            <a class="introduction__link" href="request.php">Записаться</a>
+            <a class="introduction__link" href="request.php?faculty=gymnastics">Записаться</a>
         </div>
     </section>
 

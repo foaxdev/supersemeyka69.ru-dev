@@ -75,11 +75,7 @@
 
                         <select class="form__input form__input--select <?=$classname; ?>" name="faculty" id="faculty">
                             <?php for($i = 0; $i < sizeof($arr_faculties); $i++) {
-                                    $selected = "";
-                                    if (isFacultySelected($arr_faculties[$i])) {
-                                        $selected = "selected";
-                                    }
-                                    print('<option value="' . $arr_faculties[$i] . '" ' . $selected . '>' . $arr_faculties[$i] . '</option>');
+                                    print('<option value="' . $arr_faculties[$i] . '" ' . ($faculty === $arr_faculties[$i] ? 'selected' : '') . '>' . $facultiesNames[$i] . '</option>');
                                 }
                             ?>
                         </select>

@@ -16,7 +16,7 @@
                 <li class="introduction-list__item">сценическая речь</li>
                 <li class="introduction-list__item">сценическое движение</li>
             </ul>
-            <a class="introduction__link" href="request.php">Записаться</a>
+            <a class="introduction__link" href="request.php?faculty=acting">Записаться</a>
         </div>
     </section>
 

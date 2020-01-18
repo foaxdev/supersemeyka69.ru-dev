@@ -18,7 +18,7 @@
                 <li class="introduction-list__item">командную работу</li>
                 <li class="introduction-list__item">основу знаний в области физики и химии</li>
             </ul>
-            <a class="introduction__link" href="request.php">Записаться</a>
+            <a class="introduction__link" href="request.php?faculty=science">Записаться</a>
         </div>
     </section>
 
